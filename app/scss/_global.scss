@@ -34,3 +34,19 @@ li{
   margin: 0 auto;
   //background-color: green;
 }
+.container-smaller{
+  max-width: 1024px;  
+  margin: 0 auto;
+}
+
+h3{
+  font-family: 'Good Vibes Pro';
+  font-size: 6.5rem;
+  //display: flex;
+  //justify-content: center;
+  //align-items: center;
+  display: block;
+  //width: 100%;
+  text-align: center;  
+  margin: 1rem auto;
+}
