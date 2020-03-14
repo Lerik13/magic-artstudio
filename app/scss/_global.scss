@@ -1,0 +1,36 @@
+html{
+  box-sizing: border-box;
+  font-size: 10px;
+}
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+body{
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  background-color: #fff;
+  color: #3f3f3f;  
+  min-width: 320px;
+  overflow-x: hidden;
+}
+a{
+  display: inline-block;
+  text-decoration: none;
+  //color: #fff;
+  cursor: pointer;
+}
+ul, 
+li{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.container{
+  //max-width: 1920px;
+  max-width: 1280px;  
+  margin: 0 auto;
+  //background-color: green;
+}
