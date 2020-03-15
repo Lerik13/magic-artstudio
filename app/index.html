@@ -20,7 +20,11 @@
         <div class="header__menu-inner">
           <div class="header__logo">
             <a href="#">
-              <img src="img/logo.png" alt="Logo">
+              <picture>
+                <source type="image/webp" srcset="img/logo.webp 1x, img/logo@2x.webp 2x">
+                <img src="img/logo.jpg" srcset="img/logo@2x.png 2x" alt="">
+              </picture>     
+              <!-- <img src="img/logo.png" alt="Logo"> -->
             </a>
           </div>
           <nav class="menu">
@@ -39,12 +43,35 @@
       </div>
     </div>
 
-    <div class="header__slider">
+<!--     <div class="header__slider">
       <div class="header__slider-item slider-item" style="background-image: url(img/header-1-0.jpg);">
       </div>
       <div class="header__slider-item slider-item" style="background-image: url(img/header-2.jpg);">
       </div>
       <div class="header__slider-item slider-item" style="background-image: url(img/header-3.jpg);">
+      </div>
+    </div> -->  
+    <div class="header__slider">
+      <div class="header__slider-item slider-item">
+        <picture>
+          <source type="image/webp" srcset="img/header-1.webp 1x, img/header-1@2x.webp 2x, img/header-1@3x.webp 3x">
+          <img src="img/header-1.jpg" srcset="img/header-1@2x.png 2x, img/header-1@3x.png 3x" alt="">
+        </picture>
+        <!-- <img src="img/header-1.jpg" alt=""> -->        
+      </div>
+      <div class="header__slider-item slider-item">
+        <picture>
+          <source type="image/webp" srcset="img/header-2.webp 1x, img/header-2@2x.webp 2x">
+          <img data-lazy="img/header-2.jpg" srcset="img/header-1@2x.png 2x" alt="">
+        </picture>
+        <!-- <img src="img/header-2.jpg" alt=""> -->
+      </div>
+      <div class="header__slider-item slider-item">
+        <picture>
+          <source type="image/webp" srcset="img/header-3.webp 1x, img/header-3@2x.webp 2x">
+          <img data-lazy="img/header-3.jpg" srcset="img/header-3@2x.png 2x" alt="">
+        </picture>
+        <!-- <img src="img/header-3.jpg" alt=""> -->
       </div>
     </div>  
     
@@ -66,7 +93,11 @@
       <h3>About me</h3>
       <div class="about__info">
         <div class="about__info-img">
-          <img src="img/about-me.png" alt="">
+          <picture>
+            <source type="image/webp" srcset="img/about-me.webp 1x, img/about-me@2x.webp 2x">
+            <img src="img/about-me.jpg" srcset="img/about-me@2x.png 2x" alt="">
+          </picture> 
+          <!-- <img src="img/about-me.png" alt=""> -->
         </div>
         <div class="about__info-text">
           I am Valeria Kan, first of all I am mother of two lovely girls. They are the main reason of all my life transformation. My kids bring me back into the brightness child feeling without any borders for fantasy and imagination. I started from organizing small birthday parties for my girls, than for friends and so forth. And now I can&#39;t live without enjoyment seeing happiness of everyone, who involved in events, which I with my team are making in my Magic Art Studio.
