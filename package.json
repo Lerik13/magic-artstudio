@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Vadim Prokopchuk",
+  "author": "Kan Valeria",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.5",
@@ -19,7 +19,9 @@
     "gulp-uglify": "^3.0.2",
     "normalize.css": "^8.0.1"
   },
-  "dependencies": {
-    "slick-carousel": "^1.8.1"
+  "dependencies": {    
+    "slick-carousel": "^1.8.1",
+    "animate.css": "^3.7.2",
+    "wow": "0.0.6"
   }
 }

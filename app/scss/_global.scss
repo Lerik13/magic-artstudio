@@ -11,15 +11,15 @@ body{
   font-family: 'Proxima Nova', sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
-  background-color: #fff;
-  color: #3f3f3f;  
+  background-color: $color-grey-light-1;
+  color: $color-text;
   min-width: 320px;
   overflow-x: hidden;
+  display: block;
 }
 a{
   display: inline-block;
-  text-decoration: none;
-  //color: #fff;
+  text-decoration: none;  
   cursor: pointer;
 }
 ul, 
@@ -28,25 +28,138 @@ li{
   margin: 0;
   padding: 0;
 }
-.container{
-  //max-width: 1920px;
-  max-width: 1280px;  
+.container {  
+  max-width: 1000px;  
   margin: 0 auto;
-  //background-color: green;
+  padding: 0 1rem;  
 }
-.container-smaller{
-  max-width: 1024px;  
+.container--bigger {
+  max-width: 1200px;  
+}
+.container-1260 {  
+  max-width: 1260px;  
   margin: 0 auto;
+  padding: 0 1rem;  
 }
 
-h3{
+h3 {
   font-family: 'Good Vibes Pro';
   font-size: 6.5rem;
-  //display: flex;
-  //justify-content: center;
-  //align-items: center;
   display: block;
-  //width: 100%;
   text-align: center;  
   margin: 1rem auto;
+  font-weight: normal;
 }
+
+.btn {
+  //display: block;  
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(163, 129, 0, 0.5);
+  //color: #585656;
+  padding: 20px 30px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 34px;
+  box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.3);
+  position: relative;
+  transition: all .3s;
+  outline: none;
+
+  &:hover {
+    cursor: pointer;
+    filter: drop-shadow(1px 2px 2px #d49b00);
+    color: #585656;  
+  }
+}
+.btn--yellow {
+  background: #ffd65e;
+  background: linear-gradient(to bottom, #ffd65e 0%, #febf04 100%);
+}
+.btn--green {
+  background: #017a2c;
+  background: linear-gradient(to bottom, #00c52e 0%, #00491a 100%);
+/*   &:hover {
+    cursor: pointer;
+    //filter: drop-shadow(1px 2px 2px #00491a);
+    color: #bcfacb;  
+  } */
+}
+.btn--center {
+  padding-right: 30px;
+}
+.btn--arrow{
+  &::before {
+    content: '';
+    display: block;
+    background: url('../img/svg/arrow-btn-right.svg') no-repeat;
+    background-size: 80%;
+    position: absolute;
+    top: 12px;
+    right: 17px;
+    width: 40px;
+    height: 38px;
+  }
+}
+
+.text--yellow {
+  color: $color-yellow;
+}
+.text--green {
+  color: $color-green;
+}
+.text--blue {
+  color: $color-blue;
+}
+
+
+.bg--pink {
+  background-color: $color-pink;
+}
+.bg--blue {
+  background-color: $color-blue;
+}
+.bg--light-blue {
+  background-color: $color-light-blue;
+}
+.bg--purple {
+  background-color: $color-purple;
+}
+.bg--green {
+  background-color: $color-green;
+}
+
+
+
+.slider-arrows {
+  position: absolute;
+  top: 50%;  
+  cursor: pointer;
+  z-index: 12;
+  width: 39px;
+  height: auto;
+  opacity: 0.85;
+  transition: scale 2s ease;  
+
+  &:hover {
+    opacity: 1;
+  }
+}
+.slider-arrows--left {
+  left: 0px;
+  transform: rotate(180deg);  
+  &:hover{
+    //filter: drop-shadow(1px 2px 2px #d49b00);
+    transform: rotate(180deg) scale(1.2); 
+  }  
+}
+.slider-arrows--right {
+  right: 0px;
+  &:hover{    
+    transform: scale(1.2);
+  }
+}  
+
+

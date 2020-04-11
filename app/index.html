@@ -3,109 +3,833 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Magic Art Studio - Magic Bubble Show</title>
   <!-- <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet"> -->
   <link rel="stylesheet" href="css/style.min.css">
+  <!-- <link rel="stylesheet" href="animate.min.css">  -->
+  <link rel="shortcut icon" type="image/ico" href="img/favicon.ico">
+  <title>Magic Art Studio - Magic Bubble Show</title>
 </head>
 
 <body>
 
-
-  <header class="header">
-
-    <div class="header__menu">
+  <header class="header" id="header">
+    <div class="header__top">
       <div class="container">
-        <div class="header__menu-inner">
-          <div class="header__logo">
-            <a href="#">
+        <div class="header__top-inner">
+          <div class="logo animated bounceInDown slow" data-wow-offset="400">
+            <a class="logo__link" href="#">
               <picture>
                 <source type="image/webp" srcset="img/logo.webp 1x, img/logo@2x.webp 2x">
-                <img src="img/logo.jpg" srcset="img/logo@2x.png 2x" alt="">
-              </picture>     
+                <img class="logo__img" src="img/logo.png" srcset="img/logo@2x.png 2x" alt="">
+              </picture>
               <!-- <img src="img/logo.png" alt="Logo"> -->
             </a>
           </div>
           <nav class="menu">
             <ul class="menu__list">
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Gallery</a></li>
-              <li><a href="#">Reviews</a></li>
-              <li><a href="#">Q&amp;A</a></li>
-              <li><a href="#">Contacts</a></li>
+              <li class="menu__list-item">
+                <a class="menu__link" href="#">Services</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link" href="#">Gallery</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link" href="#">Reviews</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link" href="#">Q&amp;A</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link" href="#">Contact</a>
+              </li>
             </ul>
           </nav>
-          <div class="header__phone">
-            <span>(780)</span>863-72-80
+          <div class="header__top-phone">
+            <span class="header__top-phone--smaller-grey">(780)</span>863-72-80
+          </div>
+          <div class="header__top-burger">
+            <span></span>
           </div>
         </div>
       </div>
     </div>
 
-<!--     <div class="header__slider">
-      <div class="header__slider-item slider-item" style="background-image: url(img/header-1-0.jpg);">
-      </div>
-      <div class="header__slider-item slider-item" style="background-image: url(img/header-2.jpg);">
-      </div>
-      <div class="header__slider-item slider-item" style="background-image: url(img/header-3.jpg);">
-      </div>
-    </div> -->  
     <div class="header__slider">
-      <div class="header__slider-item slider-item">
+      <div class="header__slider-item">
         <picture>
           <source type="image/webp" srcset="img/header-1.webp 1x, img/header-1@2x.webp 2x, img/header-1@3x.webp 3x">
-          <img src="img/header-1.jpg" srcset="img/header-1@2x.png 2x, img/header-1@3x.png 3x" alt="">
+          <img class="header__slider-img" src="img/header-1.jpg" srcset="img/header-1@2x.jpg 2x, img/header-1@3x.jpg 3x" alt="">
         </picture>
-        <!-- <img src="img/header-1.jpg" alt=""> -->        
       </div>
-      <div class="header__slider-item slider-item">
+      <div class="header__slider-item">
         <picture>
           <source type="image/webp" srcset="img/header-2.webp 1x, img/header-2@2x.webp 2x">
-          <img data-lazy="img/header-2.jpg" srcset="img/header-1@2x.png 2x" alt="">
+          <img class="header__slider-img" data-lazy="img/header-2.jpg" srcset="img/header-2@2x.jpg 2x" alt="">
         </picture>
-        <!-- <img src="img/header-2.jpg" alt=""> -->
       </div>
-      <div class="header__slider-item slider-item">
+      <div class="header__slider-item">
         <picture>
           <source type="image/webp" srcset="img/header-3.webp 1x, img/header-3@2x.webp 2x">
-          <img data-lazy="img/header-3.jpg" srcset="img/header-3@2x.png 2x" alt="">
+          <img class="header__slider-img" data-lazy="img/header-3.jpg" srcset="img/header-3@2x.jpg 2x" alt="">
         </picture>
-        <!-- <img src="img/header-3.jpg" alt=""> -->
       </div>
-    </div>  
-    
+    </div>
     <div class="header__info">
       <div class="container">
-        <div class="header__info-title">Magic Bubble Show</div>
-        <div class="header__info-subtitle">
+        <div class="header__info-title animated fadeInLeft delay-1s">Magic Bubble Show</div>
+        <div class="header__info-subtitle animated fadeInLeft delay-2s">
           Super cool indoor performance<br>
           for all ages and any occasion
         </div>
-        <button class="header__info-button">watch video</button>
+        <!-- <button class="header-info__button btn-yellow btn-animated animated fadeInLeft delay-3s">watch video</button> -->
+        <a class="btn btn--yellow header__info-btn animated fadeInLeft delay-3s" href="#popup-video">watch video</a>
       </div>
     </div>
-   
   </header>
-
-  <div class="container-smaller">
-    <section class="about">
+  
+  <section class="about">    
+    <div class="container">
       <h3>About me</h3>
-      <div class="about__info">
-        <div class="about__info-img">
+      <div class="about__content">
+        <div class="about__img">
           <picture>
-            <source type="image/webp" srcset="img/about-me.webp 1x, img/about-me@2x.webp 2x">
-            <img src="img/about-me.jpg" srcset="img/about-me@2x.png 2x" alt="">
-          </picture> 
-          <!-- <img src="img/about-me.png" alt=""> -->
+            <source type="image/webp" srcset="img/about-me.webp 1x, img/about-me@2x.webp 2x, img/about-me@3x.webp 3x">
+            <img src="img/about-me.jpg" srcset="img/about-me@2x.jpg 2x, img/about-me@3x.jpg 3x" alt="">
+          </picture>
         </div>
-        <div class="about__info-text">
+        <div class="about__text">
           I am Valeria Kan, first of all I am mother of two lovely girls. They are the main reason of all my life transformation. My kids bring me back into the brightness child feeling without any borders for fantasy and imagination. I started from organizing small birthday parties for my girls, than for friends and so forth. And now I can&#39;t live without enjoyment seeing happiness of everyone, who involved in events, which I with my team are making in my Magic Art Studio.
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="container container--bigger">
+      <h3 class="services__title">Services</h3>
+      
+      <div class="services__slider">
+        <div class="services__slider-item">
+          <div class="services__slider-content">
+            <div class="services__slider-text">            
+              <div class="services__slider-title">Magic Bubble Show <br> for kids</div>
+              <ul class="services__slider-list">
+                <li>recomended age: from 1 year old</li>
+                <li>program&#39;s duration: 40-60 minutes</li>
+                <li>group of: up to 15 kids</li>
+              </ul>
+              <p>
+                Our performance is full of fascinating bubble magic, cool music and colorful light effects! Watch bubble eruptions and bubble clouds come to life, you can even see what it&#39;s like on the inside and hop in a giant bubble yourself!
+              </p>
+              <div class="services__slider-row">                
+                <a class="btn btn--yellow services__slider-btn" href="#">Read more</a>
+                <div class="services__slider-price">
+                  <p>CDN&#36;<span class=" text--price">260</span></p>
+                  <p class="text--crossed">Price: CDN$ 300</p>
+                </div>
+              </div>
+              <p>and &#36;10 for each additional child <br>
+                Super Deal: if you have more than 25 kids, <br>
+                your max payment will be &#36;350
+                </p>
+            </div>
+            <div class="services__slider-img">
+              <picture>              
+                <source type="image/webp" srcset="img/service-bs-kids.webp 1x, img/service-bs-kids@2x.webp 2x, img/service-bs-kids@3x.webp 3x">
+                <img src="img/service-bs-kids.jpg" srcset="img/service-bs-kids@2x.jpg 2x, img/service-bs-kids@3x.jpg 3x" alt="Bubble Show for kids">
+              </picture>            
+            </div>
+          </div>
+        </div>
+        <div class="services__slider-item">
+          <div class="services__slider-content">
+            <div class="services__slider-text">            
+              <div class="services__slider-title">Magic Mirrow</div>
+              <ul class="services__slider-list">
+                <li>recomended age: from 6 years old</li>
+                <li>program&#39;s duration: 45-60 minutes</li>
+                <li>group of: up to 15 kids</li>
+              </ul>
+              <p>
+                We will surprise you and your guests with fascinating bubble magic: you&#39;ll see different shapes and sizes of bubbles, various bubble tricks, including bubbles filled with scenic smoke and fire. And spectacular tricks on the vertical frame will create an atmosphere of mystery.
+              </p>
+              <div class="services__slider-row">
+                <a class="btn btn--yellow services__slider-btn" href="#">Read more</a>
+                <div class="services__slider-price">
+                  <p>CDN&#36;<span class="price">300</span></p>
+                  <p class="text--crossed">Price: CDN$ 350</p>
+                </div>
+              </div>
+              <p>and &#36;10 for each additional child <br>
+                Super Deal: if you have more than 20 kids, <br>
+                your max payment will be &#36;350
+                </p>
+            </div>
+            <div class="services__slider-img">
+              <picture>              
+                <source type="image/webp" srcset="img/service-ramka.webp 1x,img/service-ramka@2x.webp 2x, img/service-ramka@3x.webp 3x">
+                <img data-lazy="img/service-ramka.jpg" srcset="img/service-ramka@2x.jpg 2x, img/service-ramka@3x.jpg 3x" alt="Magic Mirrow">
+              </picture>            
+            </div>
+          </div>
+        </div>
+        <div class="services__slider-item">
+          <div class="services__slider-content">
+            <div class="services__slider-text">            
+              <div class="services__slider-title">Magic Bubble Show <br> on stage</div>
+              <ul class="services__slider-list">
+                <li>recomended age: from 1 year old</li>
+                <li>program&#39;s duration: 30-60 minutes</li>
+                <li>group of: up to 25 guests</li>
+              </ul>
+              <p>
+                Bubble Show will beautify such events as Wedding, Anniversary, Team-building, Family event, Presentation or Promotion.
+                The most important in our performance is the mood, joy, fun, beauty, positive emotions. Our goal is happy, surprised and actively applauding guests.
+              </p>
+              <div class="services__slider-row">
+                <a class="btn btn--yellow services__slider-btn" href="#">Read more</a>
+                <div class="services__slider-price">
+                  <p>CDN&#36;<span class="price">350</span></p>
+                  <p class="text--crossed">Price: CDN$ 400</p>
+                </div>
+              </div>
+            </div>
+            <div class="services__slider-img">            
+              <picture>
+                <source type="image/webp" srcset="img/service-stage.webp 1x, img/service-stage@2x.webp 2x, img/service-stage@3x.webp 3x">
+                <img data-lazy="img/service-stage.jpg" srcset="img/service-stage@2x.jpg 2x, img/service-stage@3x.jpg 3x" alt="Magic Bubble Show on stage">
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div class="services__slider-item">
+          <div class="services__slider-content">
+            <div class="services__slider-text">            
+              <div class="services__slider-title">Magic Play</div>
+              <ul class="services__slider-list">
+                <li>recomended age: from 2 years old</li>
+                <li>program&#39;s duration: 30-45 minutes</li>
+                <li>group of: up to 15 kids</li>
+              </ul>
+              <p>
+                Outside Bubble Play is a fantastic way to set a fantasy bubbly atmosphere at your party. Millions of bubbles will excite even the most shy participant, which we can do in one swipe of our unique magic mega tools. <br>
+                This service you can order for Family or Wedding Photoshoot, Grand Opening or just for having Fun!
+              </p>
+              <div class="services__slider-row">
+                <a class="btn btn--yellow services__slider-btn" href="#">Read more</a>
+                <div class="services__slider-price">
+                  <p>CDN&#36;<span class="price">160</span></p>
+                  <p class="text--crossed">Price: CDN$ 200</p>
+                </div>
+              </div>
+            </div>
+            <div class="services__slider-img">            
+              <picture>
+                <source type="image/webp" srcset="img/service-bubble-play.webp 1x, img/service-bubble-play@2x.webp 2x, img/service-bubble-play@3x.webp 3x">
+                <img data-lazy="img/service-bubble-play.jpg" srcset="img/service-bubble-play@2x.jpg 2x, img/service-bubble-play@3x.jpg 3x" alt="Bubble Play">
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div class="services__slider-item">
+          <div class="services__slider-content">
+            <div class="services__slider-text">            
+              <div class="services__slider-title">Balloon Twisting</div>
+              <ul class="services__slider-list">
+                <li>recomended age: from 2 years old</li>
+                <li>program&#39;s duration: 60 minutes</li>
+                <li>group of: up to 15 kids</li>
+              </ul>
+              <p>
+                Balloon twisting is the perfect addition to any event.  Colorful and dynamic balloon artist will come to your house or location of the party and create for you and all your guests beautiful baloon hats, animals or cartoon characters.
+              </p>
+              <div class="services__slider-row">
+                <a class="btn btn--yellow services__slider-btn" href="#">Read more</a>
+                <div class="services__slider-price">
+                  <p>CDN&#36;<span class="price">150</span></p>
+                  <p class="text--crossed">Price: CDN$ 200</p>
+                </div>
+              </div>
+            </div>
+            <div class="services__slider-img">
+              <picture>
+                <source type="image/webp" srcset="img/service-bt.webp 1x, img/service-bt@2x.webp 2x, img/service-bt@3x.webp 3x">
+                <img data-lazy="img/service-bt.jpg" srcset="img/service-bt@2x.jpg 2x, img/service-bt@3x.jpg 3x" alt="Balloon Twisting">
+              </picture>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </div> 
+
+    <div class="services__viewport">
+      <div class="services__slider-nav">
+        
+        <div class="services__slider-nav-item">
+          <div class="services__slider-nav-img">
+            <picture>
+              <source type="image/webp" srcset="img/service-bs-kids-sm.webp 1x, img/service-bs-kids-sm@2x.webp 2x, img/service-bs-kids-sm@3x.webp 3x">
+              <img src="img/service-bs-kids-sm.jpg" srcset="img/service-bs-kids-sm@2x.jpg 2x, img/service-bs-kids-sm@3x.jpg 3x" alt="Bubble Show for kids">                
+            </picture>
+          </div>
+          <div class="services__slider-nav-title">Magic Bubble Show <br> for kids</div>
+        </div>                
+        <div class="services__slider-nav-item">
+          <div class="services__slider-nav-img">
+            <picture>
+              <source type="image/webp" srcset="img/service-ramka-sm.webp 1x, img/service-ramka-sm.webp 2x, img/service-ramka-sm@3x.webp 3x">
+              <img src="img/service-ramka-sm.jpg" srcset="img/service-ramka-sm@2x.jpg 2x, img/service-ramka-sm@3x.jpg 3x" alt="Magic Mirrow">                
+            </picture>              
+          </div>
+          <div class="services__slider-nav-title">Magic Mirrow</div>
+        </div>          
+        <div class="services__slider-nav-item">
+          <div class="services__slider-nav-img">
+            <picture>
+              <source type="image/webp" srcset="img/service-stage-sm.webp 1x, img/service-stage@2x.webp 2x, img/service-stage-sm@3x.webp 3x">
+              <img src="img/service-stage-sm.jpg" srcset="img/service-stage-sm@2x.jpg 2x, img/service-stage-sm@3x.jpg 3x" alt="Bubble Show on stage">
+            </picture>
+          </div>
+          <div class="services__slider-nav-title">Magic Bubble Show <br> on stage</div>
+        </div>
+        <div class="services__slider-nav-item">
+          <div class="services__slider-nav-img">
+            <picture>
+              <source type="image/webp" srcset="img/service-bubble-play-sm.webp 1x, img/service-bubble-play-sm.webp 2x, img/service-bubble-play-sm@3x.webp 3x">
+              <img src="img/service-bubble-play-sm.jpg" srcset="img/service-bubble-play-sm@2x.jpg 2x, img/service-bubble-play-sm@3x.jpg 3x" alt="Bubble Play">                
+            </picture>
+          </div>
+          <div class="services__slider-nav-title">Bubble Play</div>
+        </div>
+        <div class="services__slider-nav-item">
+          <div class="services__slider-nav-img">
+            <picture>
+              <source type="image/webp" srcset="img/service-bt-sm.webp 1x, img/service-bt@2x.webp 2x, img/service-bt-sm@3x.webp 3x">
+              <img src="img/service-bt-sm.jpg" srcset="img/service-bt-sm@2x.jpg 2x, img/service-bt-sm@3x.jpg 3x" alt="Bubble Play">
+            </picture>
+          </div>
+          <div class="services__slider-nav-title">Balloon Twisting</div>
+        </div> 
+    
+      </div>
+    </div>
+      
+    <div class="container">
+      <div class="services__button">
+        <a href="#" class="btn btn--green btn--center">Check availability</a>
+      </div>
+    </div>       
+  </section>
+
+  <section class="packages">
+    <div class="container-1260">
+      <h3 class="packages__title">Birthday Packages <br> for kids</h3>
+    
+      <div class="packages__inner">
+
+        <div class="packages__item">
+          <div class="packages__content">
+            <div class="packages__item-title">Bubble Show</div>
+            <div class="packages__add-info">40-60 minutes / up to 15 kids</div>
+            <div class="packages__price">&#36;260</div>
+            <div class="packages__img">              
+              <picture>
+                <source type="image/webp" srcset="img/package-1.webp 1x, img/package-1@2x.webp 2x, img/package-1@3x.webp 3x">
+                <img src="img/package-1.jpg" srcset="img/package-1@2x.jpg 2x, img/package-1@3x.jpg 3x" alt="Bubble Show - 1 package">
+              </picture>
+            </div>
+
+            <div class="packages__features">
+              <div class="packages__features-row">
+                <div class="packages__features-item">                
+                  <div class="packages__features-img bg--pink">
+                    <img src="img/ico/curtain.svg" alt="">
+                  </div>
+                  <div class="packages__features-title">
+                    indoor performance
+                  </div>
+                </div>
+                <div class="packages__features-item">                
+                  <div class="packages__features-img bg--blue">
+                    <img src="img/ico/bubbles.svg" alt="">
+                  </div>
+                  <div class="packages__features-title">
+                    thousands of bubbles
+                  </div>
+                </div>
+                <div class="packages__features-item">                
+                  <div class="packages__features-img bg--purple">
+                    <img src="img/ico/radio.svg" alt="">
+                  </div>
+                  <div class="packages__features-title">
+                    microphone lighting &#38; music
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="packages__btn">
+              <a class="btn btn--yellow btn--center" href="#" >Book now</a>
+            </div>
+
+          </div>
+        </div>
+        <div class="packages__item">
+          <div class="packages__content">
+            <div class="packages__item-title">Double Fun</div>
+            <div class="packages__subtitle">
+              <span class="text--yellow">Bubble Show</span> &#38; <span class="text--green">Balloon Twisting</span>
+            </div>
+            <div class="packages__add-info">1.5 hours / up to 15 kids</div>
+            <div class="packages__price">&#36;335</div>
+            <div class="packages__img">              
+              <picture>
+                <source type="image/webp" srcset="img/package-2.webp 1x, img/package-2@2x.webp 2x, img/package-2@3x.webp 3x">
+                <img src="img/package-2.jpg" srcset="img/package-2@2x.jpg 2x, img/package-2@3x.jpg 3x" alt="Double Fun - 2 package">
+              </picture>
+            </div>
+
+            <div class="packages__features">
+              <div class="packages__features-row">
+                <div class="packages__features-item">                
+                  <div class="packages__features-img bg--pink">
+                    <img src="img/ico/curtain.svg" alt="">
+                  </div>
+                  <div class="packages__features-title">
+                    indoor performance
+                  </div>
+                </div>
+                <div class="packages__features-item">                
+                  <div class="packages__features-img bg--blue">
+                    <img src="img/ico/bubbles.svg" alt="">
+                  </div>
+                  <div class="packages__features-title">
+                    thousands of bubbles
+                  </div>
+                </div>
+                <div class="packages__features-item">                
+                  <div class="packages__features-img bg--green">
+                    <img src="img/ico/balloon.svg" alt="">
+                  </div>
+                  <div class="packages__features-title">
+                    balloon twisting
+                  </div>
+                </div>
+                <div class="packages__features-item">                
+                  <div class="packages__features-img bg--purple">
+                    <img src="img/ico/radio.svg" alt="">
+                  </div>
+                  <div class="packages__features-title">
+                    lighting &#38; music
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="packages__btn">
+              <a href="#" class="btn btn--yellow btn--center">Book now</a>
+            </div>
+
+          </div>
+        </div>
+        <div class="packages__item">
+          <div class="packages__content">
+            <div class="packages__item-title">Super Fun</div>
+            <div class="packages__subtitle">
+              <span class="text--yellow">Bubble Show</span> &#38; <span class="text--green">Balloon Twisting</span>  &#38; <span class="text--blue">Surprise-balloon</span>
+            </div>
+            <div class="packages__add-info">2 hours / up to 15 kids</div>
+            <div class="packages__price">&#36;385</div>
+            <div class="packages__img">              
+              <picture>
+                <source type="image/webp" srcset="img/package-3.webp 1x, img/package-3@2x.webp 2x, img/package-3@3x.webp 3x">
+                <img src="img/package-3.jpg" srcset="img/package-3@2x.jpg 2x, img/package-3@3x.jpg 3x" alt="Super Fun - 3 package">
+              </picture>
+            </div>
+          
+            <div class="packages__features">
+              <div class="packages__features-row">
+                <div class="packages__features-item">                
+                  <div class="packages__features-img bg--pink">
+                    <img src="img/ico/curtain.svg" alt="">
+                  </div>
+                  <div class="packages__features-title">
+                    indoor performance
+                  </div>
+                </div>
+                <div class="packages__features-item">                
+                  <div class="packages__features-img bg--blue">
+                    <img src="img/ico/bubbles.svg" alt="">
+                  </div>
+                  <div class="packages__features-title">
+                    thousands of bubbles
+                  </div>
+                </div>
+                <div class="packages__features-item">                
+                  <div class="packages__features-img bg--green">
+                    <img src="img/ico/balloon.svg" alt="">
+                  </div>
+                  <div class="packages__features-title">
+                    balloon twisting
+                  </div>
+                </div>
+                <div class="packages__features-item">                
+                  <div class="packages__features-img bg--light-blue">
+                    <img src="img/ico/surprise.svg" alt="">
+                  </div>
+                  <div class="packages__features-title">
+                    Surprise- Balloon
+                  </div>
+                </div>
+              </div>
+            </div>           
+
+            <div class="packages__btn">
+              <a href="#" class="btn btn--yellow btn--center">Book now</a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+ 
+  <section class="reviews" id="reviews">
+    <div class="reviews__top"></div>
+    <div class="container">
+      <h3 class="reviews__title">Happy kids and parents</h3>
+      <div class="reviews__slider-video">
+
+        <div class="reviews__slider-video-item">
+          <div class="reviews__slider-video-content">
+            <a class="reviews__slider-video-link" href="#popup-reviews">
+              <div class="reviews__slider-video-img">              
+                <img src="img/review/review-video-1.jpg" alt="">
+                <div class="reviews__slider-video-btn"></div>
+              </div>
+              <div class="reviews__slider-video-title">
+                Review of <br> Amina Asim
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="reviews__slider-video-item">
+          <div class="reviews__slider-video-content">
+            <a class="reviews__slider-video-link" href="#popup-reviews">
+              <div class="reviews__slider-video-img">              
+                <img src="img/review/review-video-2.jpg" alt="">
+                <div class="reviews__slider-video-btn"></div>
+              </div>
+              <div class="reviews__slider-video-title">
+                Review of <br> Jonathan Pike
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="reviews__slider-video-item">
+          <div class="reviews__slider-video-content">
+            <a class="reviews__slider-video-link" href="#popup-reviews">
+              <div class="reviews__slider-video-img">              
+                <img src="img/review/review-video-3.jpg" alt="">
+                <div class="reviews__slider-video-btn"></div>
+              </div>
+              <div class="reviews__slider-video-title">
+                Review from <br> Fulton Child Care Centre
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="reviews__slider-video-item">
+          <div class="reviews__slider-video-content">
+            <a class="reviews__slider-video-link" href="#popup-reviews">
+              <div class="reviews__slider-video-img">              
+                <img src="img/review/review-video-4.jpg" alt="">
+                <div class="reviews__slider-video-btn"></div>
+              </div>
+              <div class="reviews__slider-video-title">
+                Review from <br> Open House <!-- Gateway Alliance Church' Daycare -->
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="reviews__slider-video-item">
+          <div class="reviews__slider-video-content">
+            <a class="reviews__slider-video-link" href="#popup-reviews">
+              <div class="reviews__slider-video-img">              
+                <img src="img/review/review-video-5.jpg" alt="">
+                <div class="reviews__slider-video-btn"></div>
+              </div>
+              <div class="reviews__slider-video-title">
+                Review of <br> Helen Lobert
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="reviews__slider-video-item">
+          <div class="reviews__slider-video-content">
+            <a class="reviews__slider-video-link" href="#popup-reviews">
+              <div class="reviews__slider-video-img">              
+                <img src="img/review/review-video-6.jpg" alt="">
+                <div class="reviews__slider-video-btn"></div>
+              </div>
+              <div class="reviews__slider-video-title">
+                Review of <br> Barbara Mandryk
+              </div>
+            </a>
+          </div>
+        </div>
+       
+      </div>  
+
+      <div class="reviews__slider">
+
+        <div class="reviews__slider-item">
+          <div class="reviews__slider-content">            
+            <div class="reviews__slider-img">
+              <img src="img/review/review-1.jpg" alt="">
+            </div>            
+            <div class="reviews__slider-text">
+              <div class="reviews__slider-title">
+                Review of Olga Bourassa
+              </div>
+              <p>
+                Thank you sooooo very much for coming to celebrate my daughter&apos;s birthday with us! Honestly, it far exceeded my expectations! The Bubble show is MA-GI-CAL!!! You transformed our basement into an enchanted bubble world of rainbow lights and vibrant music where everyone- over 20 kids and parents-was captivated by your superpower of making fiery bubbles!! It&apos;a great performance worth a professional stage, and right here in my own basement! This is a great way to celebrate a special event at home when you get a whole package from the professional performance and engaging tricks with kids to balloon twisting and surprise balloon penada! And last but not the least- the basement stayed all dry and clean AND it smelt like heaven for days!! I highly recommend parents to give this gift of fun to their child!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="reviews__slider-item">
+          <div class="reviews__slider-content">            
+            <div class="reviews__slider-img">
+              <img data-lazy="img/review/review-2.jpg" alt="">
+            </div>            
+            <div class="reviews__slider-text">
+              <div class="reviews__slider-title">
+                Review of Deanne Ferguson
+              </div>
+              <p>
+                We booked a bubble show with Magic Art Studio and will be booking with them again. They handled a large group of young children very well and that&apos;s a tough crowd to entertain! It was easy to book and the price was reasonable. Can&apos;t wait to book them again soon!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="reviews__slider-item">
+          <div class="reviews__slider-content">            
+            <div class="reviews__slider-img">
+              <img data-lazy="img/review/review-3.jpg" alt="">
+            </div>            
+            <div class="reviews__slider-text">
+              <div class="reviews__slider-title">
+                Review of Elena Gavrilovich
+              </div>
+              <p>
+                Valeria!!! It was just a blast!!! We loved loved every second of the birthday! Kids can&apos;t stop talking about it! Honestly Valeria is sooo talented and great with kids! Again thank you so much!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="reviews__slider-item">
+          <div class="reviews__slider-content">            
+            <div class="reviews__slider-img">
+              <img data-lazy="img/review/review-4.jpg" alt="">
+            </div>            
+            <div class="reviews__slider-text">
+              <div class="reviews__slider-title">
+                Review of Amina Asim
+              </div>
+              <p>
+                Had an absolutely amazing performance at my son Adams 3rd Birthday. What a great show! Thank you Valaria, you are so entertaining and the kids are still talking about you. Worth every penny. Book her, because her show is unique and very fun!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="reviews__slider-item">
+          <div class="reviews__slider-content">            
+            <div class="reviews__slider-img">
+              <img data-lazy="img/review/review-5.jpg" alt="">
+            </div>            
+            <div class="reviews__slider-text">
+              <div class="reviews__slider-title">
+                Review of Olga Morozova-Gelmici
+              </div>
+              <p>
+                It was just ... wow! What an amazing party our kids had today! We were so lucky to have Magic Art Studio to help us to celebrate our son&apos;s birthday! It was so well thought trough, no one minute the kids spent without doing something. The bubble show is a MUST-HAVE at any party as not only kids but even adults were entertained! We for sure will have another party organized with the help of this Studio. Highly recommend it!
+              </p>              
+            </div>
+          </div>
+        </div>
+        <div class="reviews__slider-item">
+          <div class="reviews__slider-content">            
+            <div class="reviews__slider-img">
+              <img data-lazy="img/review/review-6.jpg" alt="">
+            </div>            
+            <div class="reviews__slider-text">
+              <div class="reviews__slider-title">
+                Review of Lena Shubina Potekhina
+              </div>
+              <p>
+                Dear Valeria, I am writing to say a huge thank you and Magic Art Studio for an incredible Anastasia&apos;s birthday party! I can&apos;t remember the last time I&apos;ve had so much fun with kids. I appreciate your professionalism, hard work, and creativity. Thank you for all your enthusiasm and support, and I look forward to many more fascinating birthday parties to come.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="reviews__slider-item">
+          <div class="reviews__slider-content">            
+            <div class="reviews__slider-img">
+              <img data-lazy="img/review/review-7.jpg" alt="">
+            </div>            
+            <div class="reviews__slider-text">
+              <div class="reviews__slider-title">
+                Review of Olga Alkina
+              </div>
+              <p>
+                Thank you Valeria. It was really incredible, fun, bubbly magic for both the kids and the adults. It was really great that you could handle the kids so well and keep them all entertained and happy. I think you have a lot of potential and i hope to see your business only grows.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="reviews__slider-item">
+          <div class="reviews__slider-content">            
+            <div class="reviews__slider-img">
+              <img data-lazy="img/review/review-8.jpg" alt="">
+            </div>            
+            <div class="reviews__slider-text">
+              <div class="reviews__slider-title">
+                Review of Anjelika Dolgireva
+              </div>
+              <p>
+                Dear Valeria, thank you very much for our daughter&apos;s Birthday party with Bubble show and Pirate treasure hunt. All kids enjoyed the interactive performance. We will definitely recommend you to our friends and invite you next year. Absolutely amazing!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="reviews__slider-item">
+          <div class="reviews__slider-content">            
+            <div class="reviews__slider-img">
+              <img data-lazy="img/review/review-9.jpg" alt="">
+            </div>            
+            <div class="reviews__slider-text">
+              <div class="reviews__slider-title">
+                Review of Tatiana Repina Mavrina
+              </div>
+              <p>
+                Yesterday we had a wonderful evening with Magic Art Studio &hellip; To say that it was fun, to say nothing &hellip; Everyone is happy and today we remember and plan to implement it on our birthday &hellip; Thanks to Valeria for such a miracle and joy for our family &hellip; Again, waiting for our meeting &hellip; And thank you for the balloon surprise &#10084;
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="reviews__slider-item">
+          <div class="reviews__slider-content">            
+            <div class="reviews__slider-img">
+              <img data-lazy="img/review/review-10.jpg" alt="">
+            </div>            
+            <div class="reviews__slider-text">
+              <div class="reviews__slider-title">
+                Review of Maria Protodyakonova
+              </div>
+              <p>
+                Thank you so much for the wonderful show! The kids, as well as the adults (!) were amazed by your show and all asked to get your contacts for their events in the future. Not counting, of course, the birthday boy who, I&apos;m afraid, will always expect his birthdays to be this much fun! Thanks so much!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="reviews__slider-item">
+          <div class="reviews__slider-content">            
+            <div class="reviews__slider-img">
+              <img data-lazy="img/review/review-11.jpg" alt="">
+            </div>            
+            <div class="reviews__slider-text">
+              <div class="reviews__slider-title">
+                Review of Ekaterina Gillingham
+              </div>
+              <p>
+                Thank You very much, Valeria and Irina for the Bubble Show for the Kolobok Daycare Christmas Party! It was a real miracle! Kids loved it!                
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="reviews__slider-item">
+          <div class="reviews__slider-content">            
+            <div class="reviews__slider-img">
+              <img data-lazy="img/review/review-12.jpg" alt="">
+            </div>            
+            <div class="reviews__slider-text">
+              <div class="reviews__slider-title">
+                Review of Tatiana Shepelitscity
+              </div>
+              <p>
+                Thank you so much Valeria for the amazing bubble show, it was spectacular! The kids had a blast!!! Loved and enjoyed every moment!!!
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>  
+
+    </div>
+  </section>
+  
+
+  <div class="popup" id="popup-video">
+    <div class="popup__content">      
+      <a class="popup__close" id="popup__close-btn" href="#header">&times;</a>
+      <!-- <video src="video/magic_bubble_show.mp4" controls poster="./video/poster-video.jpg" class="popup__video" width="100%"></video> -->
+      <!-- <video class="popup__video" controls autoplay> -->
+      <video class="popup__video" id="popup__video-bs" controls>
+        <source src="video/magic_bubble_show.mp4" type="video/mp4">
+        <!-- <source src="movie.ogg" type="video/ogg"> -->
+        Your browser does not support the video tag.
+      </video>
+    </div>
   </div>
 
+  <div class="popup" id="popup-reviews">
+    <div class="popup__content">      
+      <a class="popup__close" id="popup__close-review-btn" href="#reviews">&times;</a>      
+      
+      <div class="popup__slider">
+        <div class="popup__slider-item">
+          <video class="popup__video popup__video-review" id="popup__video-review-1" controls>
+            <source src="video/review-1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="popup__slider-item">
+          <video class="popup__video popup__video-review" id="popup__video-review-2" controls>
+            <source src="video/review-2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="popup__slider-item">
+          <video class="popup__video popup__video-review" id="popup__video-review-3" controls>
+            <source src="video/review-3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="popup__slider-item">
+          <video class="popup__video popup__video-review" id="popup__video-review-4" controls>
+            <source src="video/review-4.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="popup__slider-item">
+          <video class="popup__video popup__video-review" id="popup__video-review-5" controls>
+            <source src="video/review-5.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="popup__slider-item">
+          <video class="popup__video popup__video-review" id="popup__video-review-6" controls>
+            <source src="video/review-6.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
