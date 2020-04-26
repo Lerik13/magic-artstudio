@@ -47,7 +47,8 @@ gulp.task('script', function(){
 
 gulp.task('js', function(){
   return gulp.src([
-    'node_modules/slick-carousel/slick/slick.js',    
+		'node_modules/slick-carousel/slick/slick.js',
+		'node_modules/wow.js/dist/wow.js',
     //'node_modules/magnific-popup/slick/jquery.magnific-popup.js',
   ])
     .pipe(concat('libs.min.js'))
