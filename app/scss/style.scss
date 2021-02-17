@@ -2148,6 +2148,76 @@
 	}
 }
 
+.service-bubble-show-kids {
+	.no-webp & {
+		background-image: url("../img/services/bg-service-bs-kids.jpg");
+	}
+
+	.webp & {
+		background-image: url("../img/services/bg-service-bs-kids.webp");
+	}
+
+	.no-js & {
+		background-image: url("../img/services/bg-service-bs-kids.jpg");
+	}
+}
+
+.service-bubble-play {
+	.no-webp & {
+		background-image: url("../img/services/bg-service-bubble-play.jpg");
+	}
+
+	.webp & {
+		background-image: url("../img/services/bg-service-bubble-play.webp");
+	}
+
+	.no-js & {
+		background-image: url("../img/services/bg-service-bubble-play.jpg");
+	}
+}
+
+.service-bs-frame {
+	.no-webp & {
+		background-image: url("../img/services/bg-service-bs-frame.jpg");
+	}
+
+	.webp & {
+		background-image: url("../img/services/bg-service-bs-frame.webp");
+	}
+
+	.no-js & {
+		background-image: url("../img/services/bg-service-bs-frame.jpg");
+	}
+}
+
+.service-bs-stage {
+	.no-webp & {
+		background-image: url("../img/services/bg-service-bs-stage.jpg");
+	}
+
+	.webp & {
+		background-image: url("../img/services/bg-service-bs-stage.webp");
+	}
+
+	.no-js & {
+		background-image: url("../img/services/bg-service-bs-stage.jpg");
+	}
+}
+
+.service-bt {
+	.no-webp & {
+		background-image: url("../img/services/bg-service-bt.jpg");
+	}
+
+	.webp & {
+		background-image: url("../img/services/bg-service-bt.webp");
+	}
+
+	.no-js & {
+		background-image: url("../img/services/bg-service-bt.jpg");
+	}
+}
+
 .service-header__info {
 	padding-top: 65px;
 	padding-bottom: 40px;
