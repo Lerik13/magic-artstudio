@@ -2,42 +2,43 @@
 
 @font-face {
 	font-family: 'Proxima Nova';
-	src: url('../fonts/ProximaNova-Regular.eot');
-	src: local('☺'), url('../fonts/ProximaNova-Regular.woff') format('woff'), url('../fonts/ProximaNova-Regular.ttf') format('truetype'), url('../fonts/ProximaNova-Regular.svg') format('svg');
+	src: url('../fonts/proximanova-regular.woff2') format('woff2');
 	font-weight: 400;
 	font-style: normal;
+	font-display: swap;
 }
 @font-face {
 	font-family: 'Proxima Nova';
-	src: url('../fonts/Proxima Nova Bold.eot');
-	src: local('☺'), url('../fonts/Proxima Nova Bold.woff') format('woff'), url('../fonts/Proxima Nova Bold.ttf') format('truetype'), url('../fonts/Proxima Nova Bold.svg') format('svg');
+	src: url('../fonts/proximanova-bold.woff2') format('woff2');
 	font-weight: 700;
 	font-style: normal;
-}
-@font-face {
-	font-family: 'Forte';
-	src:url('../fonts/Forte.woff') format('woff'), url('../fonts/Forte.svg#Forte') format('svg'), url('../fonts/Forte.eot'), url('../fonts/Forte.eot?#iefix') format('embedded-opentype');
-	font-weight: normal;
-	font-style: normal;
+	font-display: swap;
 }
 @font-face {
 	font-family: 'Good Vibes Pro';
-	src: url('../fonts/GoodVibesPro.eot');
-	src: local('☺'), url('../fonts/GoodVibesPro.woff') format('woff'), url('../fonts/GoodVibesPro.ttf') format('truetype'), url('../fonts/GoodVibesPro.svg') format('svg');
+	src: url('../fonts/goodvibespro.woff2') format('woff2');
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
 }
 @font-face {
 	font-family: 'Mount';
-	src: url('../fonts/Mount.eot');
-	src: local('☺'), url('../fonts/Mount.woff') format('woff'), url('../fonts/Mount.ttf') format('truetype'), url('../fonts/Mount.svg') format('svg');
+	src: url('../fonts/mount.woff2') format('woff2');
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
 }
 @font-face {
 	font-family: 'Anton';
-	src: url('../fonts/Anton.eot');
-	src: local('☺'), url('../fonts/Anton.woff') format('woff'), url('../fonts/Anton.ttf') format('truetype'), url('../fonts/Anton.svg') format('svg');
+	src: url('../fonts/anton.woff2') format('woff2');
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Forte";
+	src: url("../fonts/forte.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }

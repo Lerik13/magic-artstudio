@@ -1,0 +1,44 @@
+// @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap');
+
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('../fonts/proximanova-regular.woff2') format('woff2'),
+			 url('../fonts/proximanova-regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('../fonts/proximanova-bold.woff2') format('woff2'),
+			 url('../fonts/proximanova-bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Good Vibes Pro';
+	src: url('../fonts/goodvibespro.woff2') format('woff2'),
+			 url('../fonts/goodvibespro.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Mount';
+	src: url('../fonts/mount.woff2') format('woff2'),
+			 url('../fonts/mount.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Anton';
+	src: url('../fonts/anton.woff2') format('woff2'),
+			 url('../fonts/anton.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Forte";
+	src: url("../fonts/forte.woff") format("woff"),
+			 url("../fonts/forte.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}

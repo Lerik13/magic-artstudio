@@ -1,5 +1,5 @@
 <?php
-
+/*
 $method = $_SERVER['REQUEST_METHOD'];
 
 //Script Foreach
@@ -50,3 +50,5 @@ $headers = "MIME-Version: 1.0" . PHP_EOL .
 'Reply-To: '.$admin_email.'' . PHP_EOL;
 
 mail($admin_email, adopt($form_subject), $message, $headers );
+*/
+echo(1);

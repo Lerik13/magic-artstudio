@@ -1,0 +1,29 @@
+{
+  "name": "gulp-start",
+  "version": "1.0.0",
+  "description": "start gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kan Valeria",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "browser-sync": "^2.26.5",
+    "jquery": "^3.5.1",
+    "gulp-concat": "^2.6.1",
+    //"del": "^5.0.0",
+    //"gulp-autoprefixer": "^6.1.0",
+    //"gulp-rename": "^1.4.0",
+    //"gulp-sass": "^4.0.2",
+    //"gulp-uglify": "^3.0.2",
+    //"normalize.css": "^8.0.1",
+    //"wow.js": "^1.2.2"
+  },
+  //"dependencies": {
+  //  "slick-carousel": "^1.8.1",
+  //  "animate.css": "^3.7.2",
+  //  "wow": "0.0.6"
+  //}
+}
