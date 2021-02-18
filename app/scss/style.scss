@@ -148,7 +148,7 @@
 
 	// .menu__link
 	&__link {
-		color: $color-black;
+		color: $color-text; //$color-black;
 		position: relative;
 
 		&::after {

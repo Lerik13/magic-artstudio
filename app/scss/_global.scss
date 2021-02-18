@@ -13,6 +13,7 @@ body {
 	font-family: 'Proxima Nova', sans-serif;
 	font-weight: 400;
 	font-size: 1.6rem;
+	//line-height: 130%;
 	background-color: $color-grey-light-1;
 	color: $color-text;
 	min-width: 320px;
@@ -139,7 +140,7 @@ h3 {
 	&::before {
 		content: '';
 		display: block;
-		background: url('../images/dest/svg/arrow-btn-right.svg') no-repeat;
+		background: url('../img/svg/arrow-btn-right.svg') no-repeat;
 		background-size: 80%;
 		position: absolute;
 		top: 14px;

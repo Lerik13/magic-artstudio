@@ -67,8 +67,8 @@ $(function () {
 		fade: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		prevArrow: '<img class="slider-arrows slider-arrows--left services__slider-arrows--left" src="images/dest/svg/arrow-slider2-orange.svg" alt="">',
-		nextArrow: '<img class="slider-arrows slider-arrows--right services__slider-arrows--right" src="images/dest/svg/arrow-slider2-orange.svg" alt="">',
+		prevArrow: '<img class="slider-arrows slider-arrows--left services__slider-arrows--left" src="img/svg/arrow-slider2-orange.svg" alt="">',
+		nextArrow: '<img class="slider-arrows slider-arrows--right services__slider-arrows--right" src="img/svg/arrow-slider2-orange.svg" alt="">',
 		//dots: true,
 		//dotsClass: 'header__slider-dots',
 		//centerMode: true,
@@ -82,8 +82,8 @@ $(function () {
 
 	$('.services__slider-nav').slick({
 		arrows: false,
-		prevArrow: '<img class="slider-arrows slider-arrows--left-small" src="images/dest/svg/arrow_slider-yellow.svg" alt="">',
-		nextArrow: '<img class="slider-arrows slider-arrows--right-small" src="images/dest/svg/arrow_slider-yellow.svg" alt="">',
+		prevArrow: '<img class="slider-arrows slider-arrows--left-small" src="img/svg/arrow_slider-yellow.svg" alt="">',
+		nextArrow: '<img class="slider-arrows slider-arrows--right-small" src="img/svg/arrow_slider-yellow.svg" alt="">',
 		slidesToShow: 5,
 		slidesToScroll: 1,
 		dots: false,
@@ -138,8 +138,8 @@ $(function () {
 
 	$('.reviews__slider-video').slick({
 		//fade: true,
-		prevArrow: '<img class="slider-arrows slider-arrows--left reviews__slider-arrows--left" src="images/dest/svg/arrow_slider-yellow.svg" alt="">',
-		nextArrow: '<img class="slider-arrows slider-arrows--right reviews__slider-arrows--right" src="images/dest/svg/arrow_slider-yellow.svg" alt="">',
+		prevArrow: '<img class="slider-arrows slider-arrows--left reviews__slider-arrows--left" src="img/svg/arrow_slider-yellow.svg" alt="">',
+		nextArrow: '<img class="slider-arrows slider-arrows--right reviews__slider-arrows--right" src="img/svg/arrow_slider-yellow.svg" alt="">',
 		slidesToShow: 3,
 		slidesToScroll: 3,
 		asNavFor: '.popup__slider',
@@ -162,8 +162,8 @@ $(function () {
 	});
 	$('.reviews__slider').slick({
 		fade: true,
-		prevArrow: '<img class="slider-arrows slider-arrows--left reviews__slider-arrows--left" src="images/dest/svg/arrow_slider-pink.svg" alt="">',
-		nextArrow: '<img class="slider-arrows slider-arrows--right reviews__slider-arrows--right" src="images/dest/svg/arrow_slider-pink.svg" alt="">',
+		prevArrow: '<img class="slider-arrows slider-arrows--left reviews__slider-arrows--left" src="img/svg/arrow_slider-pink.svg" alt="">',
+		nextArrow: '<img class="slider-arrows slider-arrows--right reviews__slider-arrows--right" src="img/svg/arrow_slider-pink.svg" alt="">',
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		//adaptiveHeight: true,
@@ -171,8 +171,8 @@ $(function () {
 
 	$('.popup__slider').slick({
 		fade: true,
-		prevArrow: '<img class="slider-arrows slider-arrows--left popup__slider-arrows--left slider-popup" src="images/dest/svg/arrow_slider-white.svg" alt="">',
-		nextArrow: '<img class="slider-arrows slider-arrows--right popup__slider-arrows--right slider-popup" src="images/dest/svg/arrow_slider-white.svg" alt="">',
+		prevArrow: '<img class="slider-arrows slider-arrows--left popup__slider-arrows--left slider-popup" src="img/svg/arrow_slider-white.svg" alt="">',
+		nextArrow: '<img class="slider-arrows slider-arrows--right popup__slider-arrows--right slider-popup" src="img/svg/arrow_slider-white.svg" alt="">',
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		draggable: false,
@@ -189,8 +189,8 @@ $(function () {
 		variableWidth: false,
 		//focusOnSelect: true,
 
-		prevArrow: '<img class="slider-arrows slider-arrows--left gallery__slider-arrows--left" src="images/dest/svg/arrow-slider2-orange.svg" alt="">',
-		nextArrow: '<img class="slider-arrows slider-arrows--right gallery__slider-arrows--right" src="images/dest/svg/arrow-slider2-orange.svg" alt="">',
+		prevArrow: '<img class="slider-arrows slider-arrows--left gallery__slider-arrows--left" src="img/svg/arrow-slider2-orange.svg" alt="">',
+		nextArrow: '<img class="slider-arrows slider-arrows--right gallery__slider-arrows--right" src="img/svg/arrow-slider2-orange.svg" alt="">',
 		dots: true,
 		dotsClass: 'gallery__slider-dots',
 		responsive: [{
@@ -229,8 +229,8 @@ $(function () {
 
 	$('.photos__slider-nav').slick({
 		arrows: false,
-		prevArrow: '<img class="slider-arrows slider-arrows--left-small" src="images/dest/svg/arrow_slider-yellow.svg" alt="">',
-		nextArrow: '<img class="slider-arrows slider-arrows--right-small" src="images/dest/svg/arrow_slider-yellow.svg" alt="">',
+		prevArrow: '<img class="slider-arrows slider-arrows--left-small" src="img/svg/arrow_slider-yellow.svg" alt="">',
+		nextArrow: '<img class="slider-arrows slider-arrows--right-small" src="img/svg/arrow_slider-yellow.svg" alt="">',
 		slidesToShow: 5,
 		slidesToScroll: 1,
 		dots: false,
@@ -390,7 +390,7 @@ $(function () {
 
 	// --- Bonus - change radio button ---------------
 	$("input:radio[name=radio-costume]").click(function () {
-		$('#service-bonus__img').attr('src', "../images/dest/costumes/" + $(this).val() + ".jpg");
+		$('#service-bonus__img').attr('src', "img/costumes/" + $(this).val() + ".jpg");
 	});
 
 	/* --- Form --------------------------------------------------------- */
