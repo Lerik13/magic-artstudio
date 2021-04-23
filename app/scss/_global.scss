@@ -74,7 +74,7 @@ img {
 }
 
 .container-1260 {
-	max-width: 1260px;
+	max-width: 1400px; //1260px;
 	margin: 0 auto;
 	padding: 0 1rem;
 }
@@ -275,6 +275,15 @@ h3 {
 	cursor: pointer;
 }
 
+.checkbox:checked+label,
+.checkbox:hover+label {
+	color: $color-yellow;
+}
+
+.radio:checked+label {
+	color: $color-pink;
+}
+
 .checkbox:checked+label::before,
 .radio:checked+label::before {
 	content: '';
@@ -332,6 +341,14 @@ h3 {
 .radio:not(:checked)+label::after,
 .radio:checked+label::after {
 	border-radius: 100%;
+}
+
+.radio:checked+label::after {
+	background-color: $color-pink;
+}
+
+.radio:checked+label::before {
+	border: 2px solid $color-pink;
 }
 
 .radio:checked+label {
