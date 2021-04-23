@@ -22,8 +22,9 @@
 					<div class="logo animated bounceInDown slow" data-wow-offset="400">
 						<a class="logo__link" href="#">
 							<picture>
-								<source type="image/webp" srcset="img/logo.webp">
-								<img class="logo__img" src="img/logo.png" alt="Magic Art Studio">
+								<source type="image/webp" srcset="img/logo.webp 1x, img/logo@2x.webp 2x">
+								<img class="logo__img" src="img/logo.png" srcset="img/logo@2x.png 2x"
+									alt="Magic Art Studio">
 							</picture>
 						</a>
 					</div>
@@ -76,16 +77,18 @@
 				</li>
 				<li data-depth="0.40">
 					<picture>
-						<source media="(min-width: 960px)" srcset="img/header_clown@2x.webp, img/header_clown@2x.png">
-						<source media="(min-width: 600px)" srcset="img/header_clown.webp, img/header_clown.png">
-						<source srcset="img/header_clown.webp, img/header_clown.png">
+						<source type="image/webp" media="(min-width: 960px)" srcset="img/header_clown@2x.webp">
+						<source type="image/png" media="(min-width: 960px)" srcset="img/header_clown@2x.png">
+						<source type="image/webp" media="(min-width: 600px)" srcset="img/header_clown.webp">
+						<source type="image/png" media="(min-width: 600px)" srcset="img/header_clown.png">
+						<source srcset="img/header_clown.webp">
 						<img src="img/header_clown.png" alt="Magic Bubble Show" class="parallax__clown">
 					</picture>
 				</li>
 			</ul>
 			<div class="bottom-header__info info-header animated fadeIn delay-2s">
 				<div class="container">
-					<h1 class="info-header__title">Magic Bubble Show!!</h1>
+					<h1 class="info-header__title">Magic Bubble Show 19.4.2021</h1>
 					<div class="info-header__subtitle">
 						Super cool indoor performance<br>
 						for all ages and any occasion
@@ -107,9 +110,11 @@
 				<div class="about__content">
 					<div class="about__img wow fadeInLeft" data-wow-offset="400">
 						<picture>
-							<source media="(min-width: 600px)" srcset="img/about-me.webp 1x, img/about-me.jpg 1x,
-														img/about-me@2x.webp 2x, img/about-me@2x.jpg 2x">
-							<source srcset="img/about-me.webp, img/about-me.jpg">
+							<source type="image/webp" media="(min-width: 600px)"
+								srcset="img/about-me.webp 1x, img/about-me@2x.webp 2x">
+							<source type="image/jpeg" media="(min-width: 600px)"
+								srcset="img/about-me.jpg 1x, img/about-me@2x.jpg 2x">
+							<source srcset="img/about-me.webp">
 							<img src="img/about-me.jpg" alt="Valeria">
 						</picture>
 					</div>
@@ -161,10 +166,13 @@
 							</div>
 							<div class="services__slider-img">
 								<picture>
-									<source media="(min-width: 600px)" srcset="img/service-bs-kids.webp 1x, img/service-bs-kids.jpg 1x,
-																img/service-bs-kids@2x.webp 2x, img/service-bs-kids@2x.jpg 2x">
-									<source srcset="img/service-bs-kids.webp, img/service-bs-kids.jpg">
-									<img data-lazy="img/service-bs-kids.jpg" alt="Bubble Show for kids">
+									<source type="image/webp" media="(min-width: 600px)"
+										srcset="img/service-bs-kids.webp 1x, img/service-bs-kids@2x.webp 2x">
+									<source type="image/jpeg" media="(min-width: 600px)"
+										srcset="img/service-bs-kids.jpg 1x, img/service-bs-kids@2x.jpg 2x">
+									<source srcset="img/service-bs-kids.webp">
+									<img data-lazy="img/service-bs-kids.jpg" src="img/null.jpg"
+										alt="Bubble Show for kids">
 								</picture>
 							</div>
 						</div>
@@ -201,10 +209,12 @@
 							</div>
 							<div class="services__slider-img">
 								<picture>
-									<source media="(min-width: 600px)" srcset="img/service-ramka.webp 1x, img/service-ramka.jpg 1x,
-																img/service-ramka@2x.webp 2x, img/service-ramka@2x.jpg 2x">
-									<source srcset="img/service-ramka.webp, img/service-ramka.jpg">
-									<img src="img/service-ramka.jpg" alt="Magic Mirrow">
+									<source type="image/webp" media="(min-width: 600px)"
+										srcset="img/service-ramka.webp 1x, img/service-ramka@2x.webp 2x">
+									<source type="image/jpeg" media="(min-width: 600px)"
+										srcset="img/service-ramka.jpg 1x, img/service-ramka@2x.jpg 2x">
+									<source srcset="img/service-ramka.webp">
+									<img data-lazy="img/service-ramka.jpg" src="img/null.jpg" alt="Magic Mirrow">
 								</picture>
 							</div>
 						</div>
@@ -238,10 +248,13 @@
 							</div>
 							<div class="services__slider-img">
 								<picture>
-									<source media="(min-width: 600px)" srcset="img/service-stage.webp 1x, img/service-stage.jpg 1x,
-																img/service-stage@2x.webp 2x, img/service-stage@2x.jpg 2x">
-									<source srcset="img/service-stage.webp, img/service-stage.jpg">
-									<img src="img/service-stage.jpg" alt="Magic Bubble Show on stage">
+									<source type="image/webp" media="(min-width: 600px)"
+										srcset="img/service-stage.webp 1x, img/service-stage@2x.webp 2x">
+									<source type="image/jpeg" media="(min-width: 600px)"
+										srcset="img/service-stage.jpg 1x, img/service-stage@2x.jpg 2x">
+									<source srcset="img/service-stage.webp">
+									<img data-lazy="img/service-stage.jpg" src="img/null.jpg"
+										alt="Magic Bubble Show on stage">
 								</picture>
 							</div>
 						</div>
@@ -279,10 +292,13 @@
 							</div>
 							<div class="services__slider-img">
 								<picture>
-									<source media="(min-width: 600px)" srcset="img/service-bubble-play.webp 1x, img/service-bubble-play.jpg 1x,
-																img/service-bubble-play@2x.webp 2x, img/service-bubble-play@2x.jpg 2x">
-									<source srcset="img/service-bubble-play.webp, img/service-bubble-play.jpg">
-									<img src="img/service-bubble-play.jpg" alt="Outside Bubble Play">
+									<source type="image/webp" media="(min-width: 600px)"
+										srcset="img/service-bubble-play.webp 1x, img/service-bubble-play@2x.webp 2x">
+									<source type="image/jpeg" media="(min-width: 600px)"
+										srcset="img/service-bubble-play.jpg 1x, img/service-bubble-play@2x.jpg 2x">
+									<source srcset="img/service-bubble-play.webp">
+									<img data-lazy="img/service-bubble-play.jpg" src="img/null.jpg"
+										alt="Outside Bubble Play">
 								</picture>
 							</div>
 						</div>
@@ -314,10 +330,12 @@
 							</div>
 							<div class="services__slider-img">
 								<picture>
-									<source media="(min-width: 600px)" srcset="img/service-bt.webp 1x, img/service-bt.jpg 1x,
-																img/service-bt@2x.webp 2x, img/service-bt@2x.jpg 2x">
-									<source srcset="img/service-bt.webp, img/service-bt.jpg">
-									<img src="img/service-bt.jpg" alt="Balloon Twisting">
+									<source type="image/webp" media="(min-width: 600px)"
+										srcset="img/service-bt.webp 1x, img/service-bt@2x.webp 2x">
+									<source type="image/jpeg" media="(min-width: 600px)"
+										srcset="img/service-bt.jpg 1x, img/service-bt@2x.jpg 2x">
+									<source srcset="img/service-bt.webp">
+									<img data-lazy="img/service-bt.jpg" src="img/null.jpg" alt="Balloon Twisting">
 								</picture>
 							</div>
 						</div>
@@ -331,10 +349,13 @@
 					<div class="services__slider-nav-item wow fadeInUp" data-wow-offset="100" data-wow-delay=".3s">
 						<div class="services__slider-nav-img">
 							<picture>
-								<source media="(min-width: 600px)" srcset="img/service-bs-kids-sm.webp 1x, img/service-bs-kids-sm.jpg 1x,
-															img/service-bs-kids-sm@2x.webp 2x, img/service-bs-kids-sm@2x.jpg 2x">
-								<source srcset="img/service-bs-kids-sm.webp, img/service-bs-kids-sm.jpg">
-								<img src="img/service-bs-kids-sm.jpg" alt="Bubble Show for kids">
+								<source type="image/webp" media="(min-width: 600px)"
+									srcset="img/service-bs-kids-sm.webp 1x, img/service-bs-kids-sm@2x.webp 2x">
+								<source type="image/jpeg" media="(min-width: 600px)"
+									srcset=" img/service-bs-kids-sm.jpg 1x, img/service-bs-kids-sm@2x.jpg 2x">
+								<source srcset="img/service-bs-kids-sm.webp">
+								<img data-lazy="img/service-bs-kids-sm.jpg" src="img/null.jpg"
+									alt="Bubble Show for kids">
 							</picture>
 						</div>
 						<div class="services__slider-nav-title">Magic Bubble Show <br> for kids</div>
@@ -342,10 +363,12 @@
 					<div class="services__slider-nav-item wow fadeInUp" data-wow-offset="100" data-wow-delay=".6s">
 						<div class="services__slider-nav-img">
 							<picture>
-								<source media="(min-width: 600px)" srcset="img/service-ramka-sm.webp 1x, img/service-ramka-sm.jpg 1x,
-															img/service-ramka-sm@2x.webp 2x, img/service-ramka-sm@2x.jpg 2x">
-								<source srcset="img/service-ramka-sm.webp, img/service-ramka-sm.jpg">
-								<img src="img/service-ramka-sm.jpg" alt="Magic Mirrow">
+								<source type="image/webp" media="(min-width: 600px)"
+									srcset="img/service-ramka-sm.webp 1x, img/service-ramka-sm@2x.webp 2x">
+								<source type="image/jpeg" media="(min-width: 600px)"
+									srcset="img/service-ramka-sm.jpg 1x, img/service-ramka-sm@2x.jpg 2x">
+								<source srcset="img/service-ramka-sm.webp">
+								<img data-lazy="img/service-ramka-sm.jpg" src="img/null.jpg" alt="Magic Mirrow">
 							</picture>
 						</div>
 						<div class="services__slider-nav-title">Magic Mirrow</div>
@@ -353,10 +376,12 @@
 					<div class="services__slider-nav-item wow fadeInUp" data-wow-offset="100" data-wow-delay=".9s">
 						<div class="services__slider-nav-img">
 							<picture>
-								<source media="(min-width: 600px)" srcset="img/service-stage-sm.webp 1x, img/service-stage-sm.jpg 1x,
-															img/service-stage-sm@2x.webp 2x, img/service-stage-sm@2x.jpg 2x">
-								<source srcset="img/service-stage-sm.webp, img/service-stage-sm.jpg">
-								<img src="img/service-stage-sm.jpg" alt="Bubble Show on stage">
+								<source type="image/webp" media="(min-width: 600px)"
+									srcset="img/service-stage-sm.webp 1x, img/service-stage-sm@2x.webp 2x">
+								<source type="image/jpeg" media="(min-width: 600px)"
+									srcset="img/service-stage-sm.jpg 1x, img/service-stage-sm@2x.jpg 2x">
+								<source srcset="img/service-stage-sm.webp">
+								<img data-lazy="img/service-stage-sm.jpg" src="img/null.jpg" alt="Bubble Show on stage">
 							</picture>
 						</div>
 						<div class="services__slider-nav-title">Magic Bubble Show <br> on stage</div>
@@ -364,10 +389,13 @@
 					<div class="services__slider-nav-item wow fadeInUp" data-wow-offset="100" data-wow-delay="1.2s">
 						<div class="services__slider-nav-img">
 							<picture>
-								<source media="(min-width: 600px)" srcset="img/service-bubble-play-sm.webp 1x, img/service-bubble-play-sm.jpg 1x,
-															img/service-bubble-play-sm@2x.webp 2x, img/service-bubble-play-sm@2x.jpg 2x">
-								<source srcset="img/service-bubble-play-sm.webp, img/service-bubble-play-sm.jpg">
-								<img src="img/service-bubble-play-sm.jpg" alt="Outside Bubble Play">
+								<source type="image/webp" media="(min-width: 600px)"
+									srcset="img/service-bubble-play-sm.webp 1x, img/service-bubble-play-sm@2x.webp 2x">
+								<source type="image/jpeg" media="(min-width: 600px)"
+									srcset="img/service-bubble-play-sm.jpg 1x, img/service-bubble-play-sm@2x.jpg 2x">
+								<source srcset="img/service-bubble-play-sm.webp">
+								<img data-lazy="img/service-bubble-play-sm.jpg" src="img/null.jpg"
+									alt="Outside Bubble Play">
 							</picture>
 						</div>
 						<div class="services__slider-nav-title">Outside Bubble Play</div>
@@ -375,10 +403,12 @@
 					<div class="services__slider-nav-item wow fadeInUp" data-wow-offset="100" data-wow-delay="1.5s">
 						<div class="services__slider-nav-img">
 							<picture>
-								<source media="(min-width: 600px)" srcset="img/service-bt-sm.webp 1x, img/service-bt-sm.jpg 1x,
-															img/service-bt-sm@2x.webp 2x, img/service-bt-sm@2x.jpg 2x">
-								<source srcset="img/service-bt-sm.webp, img/service-bt-sm.jpg">
-								<img src="img/service-bt-sm.jpg" alt="Balloon Twisting">
+								<source type="image/webp" media="(min-width: 600px)"
+									srcset="img/service-bt-sm.webp 1x, img/service-bt-sm@2x.webp 2x">
+								<source type="image/jpeg" media="(min-width: 600px)"
+									srcset="img/service-bt-sm.jpg 1x, img/service-bt-sm@2x.jpg 2x">
+								<source srcset="img/service-bt-sm.webp">
+								<img data-lazy="img/service-bt-sm.jpg" src="img/null.jpg" alt="Balloon Twisting">
 							</picture>
 						</div>
 						<div class="services__slider-nav-title">Balloon Twisting</div>
@@ -407,13 +437,17 @@
 							<div class="packages__price">&#36;260</div>
 							<div class="packages__img">
 								<picture>
-									<source media="(min-width: 960px)" srcset="img/package-1.webp 1x, img/package-1.jpg 1x,
-																img/package-1@2x.webp 2x, img/package-1@2x.jpg 2x,
-																img/package-1@3x.webp 3x, img/package-1@3x.jpg 3x">
-									<source media="(min-width: 600px)" srcset="img/package-1.webp 1x, img/package-1.jpg 1x,
-																img/package-1@2x.webp 2x, img/package-1@2x.jpg 2x">
-									<source srcset="img/package-1.webp, img/package-1.jpg">
-									<img src="img/package-1.jpg" alt="Bubble Show - 1 package">
+									<source type="image/webp" media="(min-width: 960px)" srcset="img/package-1.webp 1x, img/package-1@2x.webp 2x, 
+																img/package-1@3x.webp 3x">
+									<source type="image/jpeg" media="(min-width: 960px)" srcset="img/package-1.jpg 1x,
+																img/package-1@2x.jpg 2x,
+																img/package-1@3x.jpg 3x">
+									<source type="image/webp" media="(min-width: 600px)"
+										srcset="img/package-1.webp 1x, img/package-1@2x.webp 2x">
+									<source type="image/jpeg" media="(min-width: 600px)"
+										srcset="img/package-1.jpg 1x, img/package-1@2x.jpg 2x">
+									<source srcset="img/package-1.webp">
+									<img data-lazy="img/package-1.jpg" src="img/null.jpg" alt="Bubble Show - 1 package">
 								</picture>
 							</div>
 
@@ -464,13 +498,17 @@
 							<div class="packages__price">&#36;335</div>
 							<div class="packages__img">
 								<picture>
-									<source media="(min-width: 960px)" srcset="img/package-2.webp 1x, img/package-2.jpg 1x,
-																img/package-2@2x.webp 2x, img/package-2@2x.jpg 2x,
-																img/package-2@3x.webp 3x, img/package-2@3x.jpg 3x">
-									<source media="(min-width: 600px)" srcset="img/package-2.webp 1x, img/package-2.jpg 1x,
-																img/package-2@2x.webp 2x, img/package-2@2x.jpg 2x">
-									<source srcset="img/package-2.webp, img/package-2.jpg">
-									<img src="img/package-2.jpg" alt="Bubble Show - 2 package">
+									<source type="image/webp" media="(min-width: 960px)" srcset="img/package-2.webp 1x, 
+																img/package-2@2x.webp 2x,
+																img/package-2@3x.webp 3x">
+									<source type="image/jpeg" media="(min-width: 960px)"
+										srcset="img/package-2.jpg 1x, img/package-2@2x.jpg 2x, img/package-2@3x.jpg 3x">
+									<source type="image/webp" media="(min-width: 600px)" srcset="img/package-2.webp 1x, 
+																img/package-2@2x.webp 2x">
+									<source type="image/jpeg" media="(min-width: 600px)"
+										srcset="img/package-2.jpg 1x, img/package-2@2x.jpg 2x">
+									<source srcset="img/package-2.webp">
+									<img data-lazy="img/package-2.jpg" src="img/null.jpg" alt="Bubble Show - 2 package">
 								</picture>
 							</div>
 
@@ -530,13 +568,16 @@
 							<div class="packages__price">&#36;385</div>
 							<div class="packages__img">
 								<picture>
-									<source media="(min-width: 960px)" srcset="img/package-3.webp 1x, img/package-3.jpg 1x,
-																img/package-3@2x.webp 2x, img/package-3@2x.jpg 2x,
-																img/package-3@3x.webp 3x, img/package-3@3x.jpg 3x">
-									<source media="(min-width: 600px)" srcset="img/package-3.webp 1x, img/package-3.jpg 1x,
-																img/package-3@2x.webp 2x, img/package-3@2x.jpg 2x">
-									<source srcset="img/package-3.webp, img/package-3.jpg">
-									<img src="img/package-3.jpg" alt="Bubble Show - 3 package">
+									<source type="image/webp" media="(min-width: 960px)"
+										srcset="img/package-3.webp 1x, img/package-3@2x.webp 2x, img/package-3@3x.webp 3x">
+									<source type="image/jpeg" media="(min-width: 960px)"
+										srcset="img/package-3.jpg 1x, img/package-3@2x.jpg 2x, img/package-3@3x.jpg 3x">
+									<source type="image/webp" media="(min-width: 600px)"
+										srcset="img/package-3.webp 1x, img/package-3@2x.webp 2x">
+									<source type="image/jpeg" media="(min-width: 600px)"
+										srcset="img/package-3.jpg 1x, img/package-3@2x.jpg 2x">
+									<source srcset="img/package-3.webp">
+									<img data-lazy="img/package-3.jpg" src="img/null.jpg" alt="Bubble Show - 3 package">
 								</picture>
 							</div>
 
@@ -599,18 +640,20 @@
 					<div class="reviews__slider-item">
 						<div class="reviews__slider-content">
 							<div class="reviews__slider-img  wow fadeInLeft" data-wow-offset="200">
-								<img data-lazy="img/review/review-3.jpg" alt="Review of Elena Gavrilovich">
+								<picture>
+									<source srcset="img/review/review-3.webp" type="image/webp">
+									<img data-lazy="img/review/review-3.jpg" src="img/null.jpg" alt="Review">
+								</picture>
 							</div>
 							<div class="reviews__slider-text wow fadeInRight" data-wow-offset="200">
 								<div class="reviews__slider-title">
 									Review of Elena Gavrilovich
 								</div>
 								<p>
-									Valeria!!! It was just a blast!!! We loved loved every second of the birthday! Kids
-									can&apos;t stop
-									talking about it! Honestly Valeria is sooo talented and great with kids! Again thank
-									you
-									so much!
+									Thank you, Valeria!!! It was just a blast!!! We loved every second of the birthday!
+									Kids
+									can&apos;t stop talking about it! Honestly Valeria is sooo talented and great with
+									kids! Again thank you so much!
 								</p>
 							</div>
 						</div>
@@ -619,42 +662,10 @@
 					<div class="reviews__slider-item">
 						<div class="reviews__slider-content">
 							<div class="reviews__slider-img">
-								<img data-lazy="img/review/review-1.jpg" alt="Review of Olga Bourassa">
-							</div>
-							<div class="reviews__slider-text">
-								<div class="reviews__slider-title">
-									Review of Olga Bourassa
-								</div>
-								<p>
-									Thank you sooooo very much for coming to celebrate my daughter&apos;s birthday with
-									us!
-									Honestly, it far
-									exceeded my expectations! The Bubble show is MA-GI-CAL!!! You transformed our
-									basement
-									into an enchanted
-									bubble world of rainbow lights and vibrant music where everyone- over 20 kids and
-									parents-was captivated
-									by your superpower of making fiery bubbles!! It&apos;a great performance worth a
-									professional stage, and
-									right here in my own basement! This is a great way to celebrate a special event at
-									home
-									when you get a
-									whole package from the professional performance and engaging tricks with kids to
-									balloon
-									twisting and
-									surprise balloon penada! And last but not the least- the basement stayed all dry and
-									clean AND it smelt
-									like heaven for days!! I highly recommend parents to give this gift of fun to their
-									child!
-								</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="reviews__slider-item">
-						<div class="reviews__slider-content">
-							<div class="reviews__slider-img">
-								<img data-lazy="img/review/review-2.jpg" alt="Review of Deanne Ferguson">
+								<picture>
+									<source srcset="img/review/review-2.webp" type="image/webp">
+									<img data-lazy="img/review/review-2.jpg" src="img/null.jpg" alt="Review">
+								</picture>
 							</div>
 							<div class="reviews__slider-text">
 								<div class="reviews__slider-title">
@@ -675,7 +686,10 @@
 					<div class="reviews__slider-item">
 						<div class="reviews__slider-content">
 							<div class="reviews__slider-img">
-								<img data-lazy="img/review/review-4.jpg" alt="Review of Amina Asim">
+								<picture>
+									<source srcset="img/review/review-4.webp" type="image/webp">
+									<img data-lazy="img/review/review-4.jpg" src="img/null.jpg" alt="Review">
+								</picture>
 							</div>
 							<div class="reviews__slider-text">
 								<div class="reviews__slider-title">
@@ -696,26 +710,26 @@
 					<div class="reviews__slider-item">
 						<div class="reviews__slider-content">
 							<div class="reviews__slider-img">
-								<img data-lazy="img/review/review-5.jpg" alt="Review of Olga Morozova-Gelmici">
+								<picture>
+									<source srcset="img/review/review-5.webp" type="image/webp">
+									<img data-lazy="img/review/review-5.jpg" src="img/null.jpg" alt="Review">
+								</picture>
 							</div>
 							<div class="reviews__slider-text">
 								<div class="reviews__slider-title">
 									Review of Olga Morozova-Gelmici
 								</div>
 								<p>
-									It was just ... wow! What an amazing party our kids had today! We were so lucky to
-									have
-									Magic Art Studio
-									to help us to celebrate our son&apos;s birthday! It was so well thought trough, no
+									It was just ... wow! We were so lucky to
+									have Magic Art Studio
+									to help us to celebrate our son&apos;s birthday! What an amazing party our kids had!
+									It was so well thought trough, no
 									one
 									minute the kids
 									spent without doing something. The bubble show is a MUST-HAVE at any party as not
 									only
 									kids but even
-									adults were entertained! We for sure will have another party organized with the help
-									of
-									this Studio.
-									Highly recommend it!
+									adults were entertained! Highly recommend it!
 								</p>
 							</div>
 						</div>
@@ -723,7 +737,10 @@
 					<div class="reviews__slider-item">
 						<div class="reviews__slider-content">
 							<div class="reviews__slider-img">
-								<img data-lazy="img/review/review-6.jpg" alt="Review of Lena Shubina Potekhina">
+								<picture>
+									<source srcset="img/review/review-6.webp" type="image/webp">
+									<img data-lazy="img/review/review-6.jpg" src="img/null.jpg" alt="Review">
+								</picture>
 							</div>
 							<div class="reviews__slider-text">
 								<div class="reviews__slider-title">
@@ -746,7 +763,10 @@
 					<div class="reviews__slider-item">
 						<div class="reviews__slider-content">
 							<div class="reviews__slider-img">
-								<img data-lazy="img/review/review-7.jpg" alt="Review of Olga Alkina">
+								<picture>
+									<source srcset="img/review/review-7.webp" type="image/webp">
+									<img data-lazy="img/review/review-7.jpg" src="img/null.jpg" alt="Review">
+								</picture>
 							</div>
 							<div class="reviews__slider-text">
 								<div class="reviews__slider-title">
@@ -767,7 +787,10 @@
 					<div class="reviews__slider-item">
 						<div class="reviews__slider-content">
 							<div class="reviews__slider-img">
-								<img data-lazy="img/review/review-8.jpg" alt="Review of Anjelika Dolgireva">
+								<picture>
+									<source srcset="img/review/review-8.webp" type="image/webp">
+									<img data-lazy="img/review/review-8.jpg" src="img/null.jpg" alt="Review">
+								</picture>
 							</div>
 							<div class="reviews__slider-text">
 								<div class="reviews__slider-title">
@@ -786,7 +809,10 @@
 					<div class="reviews__slider-item">
 						<div class="reviews__slider-content">
 							<div class="reviews__slider-img">
-								<img data-lazy="img/review/review-9.jpg" alt="Review of Tatiana Repina Mavrina">
+								<picture>
+									<source srcset="img/review/review-9.webp" type="image/webp">
+									<img data-lazy="img/review/review-9.jpg" src="img/null.jpg" alt="Review">
+								</picture>
 							</div>
 							<div class="reviews__slider-text">
 								<div class="reviews__slider-title">
@@ -809,7 +835,10 @@
 					<div class="reviews__slider-item">
 						<div class="reviews__slider-content">
 							<div class="reviews__slider-img">
-								<img data-lazy="img/review/review-10.jpg" alt="Review of Maria Protodyakonova">
+								<picture>
+									<source srcset="img/review/review-10.webp" type="image/webp">
+									<img data-lazy="img/review/review-10.jpg" src="img/null.jpg" alt="Review">
+								</picture>
 							</div>
 							<div class="reviews__slider-text">
 								<div class="reviews__slider-title">
@@ -830,7 +859,10 @@
 					<div class="reviews__slider-item">
 						<div class="reviews__slider-content">
 							<div class="reviews__slider-img">
-								<img data-lazy="img/review/review-11.jpg" alt="Review of Ekaterina Gillingham">
+								<picture>
+									<source srcset="img/review/review-11.webp" type="image/webp">
+									<img data-lazy="img/review/review-11.jpg" src="img/null.jpg" alt="Review">
+								</picture>
 							</div>
 							<div class="reviews__slider-text">
 								<div class="reviews__slider-title">
@@ -847,7 +879,10 @@
 					<div class="reviews__slider-item">
 						<div class="reviews__slider-content">
 							<div class="reviews__slider-img">
-								<img data-lazy="img/review/review-12.jpg" alt="Review of Tatiana Shepelitscity">
+								<picture>
+									<source srcset="img/review/review-12.webp" type="image/webp">
+									<img data-lazy="img/review/review-12.jpg" src="img/null.jpg" alt="Review">
+								</picture>
 							</div>
 							<div class="reviews__slider-text">
 								<div class="reviews__slider-title">
@@ -879,155 +914,155 @@
 			<div class="gallery__slider">
 				<div class="gallery__slider-item">
 					<picture>
-						<source media="(min-width: 960px)"
-							srcset="img/gallery/main/01-large.webp, img/gallery/main/01-large.jpg">
-						<source media="(min-width: 600px)"
-							srcset="img/gallery/main/01-medium.webp, img/gallery/main/01-medium.jpg">
-						<source srcset="img/gallery/main/01-small.webp, img/gallery/main/01-small.jpg">
-						<img class="gallery__slider-img" data-lazy="img/gallery/main/01-small.jpg"
+						<source type="image/webp" media="(min-width: 960px)" srcset="img/gallery/main/01-large.webp">
+						<source type="image/jpeg" media="(min-width: 960px)" srcset="img/gallery/main/01-large.jpg">
+						<source type="image/webp" media="(min-width: 600px)" srcset="img/gallery/main/01-medium.webp">
+						<source type="image/jpeg" media="(min-width: 600px)" srcset="img/gallery/main/01-medium.jpg">
+						<source srcset="img/gallery/main/01-small.webp">
+						<img class="gallery__slider-img" data-lazy="img/gallery/main/01-small.jpg" src="img/null.jpg"
 							alt="Magic Bubble Show picture">
 					</picture>
 				</div>
 				<div class="gallery__slider-item">
 					<picture>
-						<source media="(min-width: 960px)"
-							srcset="img/gallery/main/02-large.webp, img/gallery/main/02-large.jpg">
-						<source media="(min-width: 600px)"
-							srcset="img/gallery/main/02-medium.webp, img/gallery/main/02-medium.jpg">
-						<source srcset="img/gallery/main/02-small.webp, img/gallery/main/02-small.jpg">
-						<img class="gallery__slider-img" data-lazy="img/gallery/main/02-small.jpg"
+						<source type="image/webp" media="(min-width: 960px)" srcset="img/gallery/main/02-large.webp">
+						<source type="image/jpeg" media="(min-width: 960px)" srcset="img/gallery/main/02-large.jpg">
+						<source type="image/webp" media="(min-width: 600px)" srcset="img/gallery/main/02-medium.webp">
+						<source type="image/jpeg" media="(min-width: 600px)" srcset="img/gallery/main/02-medium.jpg">
+						<source srcset="img/gallery/main/02-small.webp">
+						<img class="gallery__slider-img" data-lazy="img/gallery/main/02-small.jpg" src="img/null.jpg"
 							alt="Magic Bubble Show picture">
 					</picture>
 				</div>
 				<div class="gallery__slider-item">
 					<picture>
-						<source media="(min-width: 960px)"
-							srcset="img/gallery/main/03-large.webp, img/gallery/main/03-large.jpg">
-						<source media="(min-width: 600px)"
-							srcset="img/gallery/main/03-medium.webp, img/gallery/main/03-medium.jpg">
-						<source srcset="img/gallery/main/03-small.webp, img/gallery/main/03-small.jpg">
-						<img class="gallery__slider-img" data-lazy="img/gallery/main/03-small.jpg"
+						<source type="image/webp" media="(min-width: 960px)" srcset="img/gallery/main/03-large.webp">
+						<source type="image/jpeg" media="(min-width: 960px)" srcset="img/gallery/main/03-large.jpg">
+						<source type="image/webp" media="(min-width: 600px)" srcset="img/gallery/main/03-medium.webp">
+						<source type="image/jpeg" media="(min-width: 600px)" srcset="img/gallery/main/03-medium.jpg">
+						<source srcset="img/gallery/main/03-small.webp">
+						<img class="gallery__slider-img" data-lazy="img/gallery/main/03-small.jpg" src="img/null.jpg"
 							alt="Magic Bubble Show picture">
 					</picture>
 				</div>
 				<div class="gallery__slider-item">
 					<picture>
-						<source media="(min-width: 960px)"
-							srcset="img/gallery/main/04-large.webp, img/gallery/main/04-large.jpg">
-						<source media="(min-width: 600px)"
-							srcset="img/gallery/main/04-medium.webp, img/gallery/main/04-medium.jpg">
-						<source srcset="img/gallery/main/04-small.webp, img/gallery/main/04-small.jpg">
-						<img class="gallery__slider-img" data-lazy="img/gallery/main/04-small.jpg"
+						<source type="image/webp" media="(min-width: 960px)" srcset="img/gallery/main/04-large.webp">
+						<source type="image/jpeg" media="(min-width: 960px)" srcset="img/gallery/main/04-large.jpg">
+						<source type="image/webp" media="(min-width: 600px)" srcset="img/gallery/main/04-medium.webp">
+						<source type="image/jpeg" media="(min-width: 600px)" srcset="img/gallery/main/04-medium.jpg">
+						<source srcset="img/gallery/main/04-small.webp">
+						<img class="gallery__slider-img" data-lazy="img/gallery/main/04-small.jpg" src="img/null.jpg"
 							alt="Magic Bubble Show picture">
 					</picture>
 				</div>
 				<div class="gallery__slider-item">
 					<picture>
-						<source media="(min-width: 960px)"
-							srcset="img/gallery/main/05-large.webp, img/gallery/main/05-large.jpg">
-						<source media="(min-width: 600px)"
-							srcset="img/gallery/main/05-medium.webp, img/gallery/main/05-medium.jpg">
-						<source srcset="img/gallery/main/05-small.webp, img/gallery/main/05-small.jpg">
-						<img class="gallery__slider-img" data-lazy="img/gallery/main/05-small.jpg"
+						<source type="image/webp" media="(min-width: 960px)" srcset="img/gallery/main/05-large.webp">
+						<source type="image/jpeg" media="(min-width: 960px)" srcset="img/gallery/main/05-large.jpg">
+						<source type="image/webp" media="(min-width: 600px)" srcset="img/gallery/main/05-medium.webp">
+						<source type="image/jpeg" media="(min-width: 600px)" srcset="img/gallery/main/05-medium.jpg">
+						<source srcset="img/gallery/main/05-small.webp">
+						<img class="gallery__slider-img" data-lazy="img/gallery/main/05-small.jpg" src="img/null.jpg"
 							alt="Magic Bubble Show picture">
 					</picture>
 				</div>
 				<div class="gallery__slider-item">
 					<picture>
-						<source media="(min-width: 960px)"
-							srcset="img/gallery/main/06-large.webp, img/gallery/main/06-large.jpg">
-						<source media="(min-width: 600px)"
-							srcset="img/gallery/main/06-medium.webp, img/gallery/main/06-medium.jpg">
-						<source srcset="img/gallery/main/06-small.webp, img/gallery/main/06-small.jpg">
-						<img class="gallery__slider-img" data-lazy="img/gallery/main/06-small.jpg"
+						<source type="image/webp" media="(min-width: 960px)" srcset="img/gallery/main/06-large.webp">
+						<source type="image/jpeg" media="(min-width: 960px)" srcset="img/gallery/main/06-large.jpg">
+						<source type="image/webp" media="(min-width: 600px)" srcset="img/gallery/main/06-medium.webp">
+						<source type="image/jpeg" media="(min-width: 600px)" srcset="img/gallery/main/06-medium.jpg">
+						<source srcset="img/gallery/main/06-small.webp">
+						<img class="gallery__slider-img" data-lazy="img/gallery/main/06-small.jpg" src="img/null.jpg"
 							alt="Magic Bubble Show picture">
 					</picture>
 				</div>
 				<div class="gallery__slider-item">
 					<picture>
-						<source media="(min-width: 960px)"
-							srcset="img/gallery/main/07-large.webp, img/gallery/main/07-large.jpg">
-						<source media="(min-width: 600px)"
-							srcset="img/gallery/main/07-medium.webp, img/gallery/main/07-medium.jpg">
-						<source srcset="img/gallery/main/07-small.webp, img/gallery/main/07-small.jpg">
-						<img class="gallery__slider-img" data-lazy="img/gallery/main/07-small.jpg"
+						<source type="image/webp" media="(min-width: 960px)" srcset="img/gallery/main/07-large.webp">
+						<source type="image/jpeg" media="(min-width: 960px)" srcset="img/gallery/main/07-large.jpg">
+						<source type="image/webp" media="(min-width: 600px)" srcset="img/gallery/main/07-medium.webp">
+						<source type="image/jpeg" media="(min-width: 600px)" srcset="img/gallery/main/07-medium.jpg">
+						<source srcset="img/gallery/main/07-small.webp">
+						<img class="gallery__slider-img" data-lazy="img/gallery/main/07-small.jpg" src="img/null.jpg"
 							alt="Magic Bubble Show picture">
 					</picture>
 				</div>
 				<div class="gallery__slider-item">
 					<picture>
-						<source media="(min-width: 960px)"
-							srcset="img/gallery/main/08-large.webp, img/gallery/main/08-large.jpg">
-						<source media="(min-width: 600px)"
-							srcset="img/gallery/main/08-medium.webp, img/gallery/main/08-medium.jpg">
-						<source srcset="img/gallery/main/08-small.webp, img/gallery/main/08-small.jpg">
-						<img class="gallery__slider-img" data-lazy="img/gallery/main/08-small.jpg"
+						<source type="image/webp" media="(min-width: 960px)" srcset="img/gallery/main/08-large.webp">
+						<source type="image/jpeg" media="(min-width: 960px)" srcset="img/gallery/main/08-large.jpg">
+						<source type="image/webp" media="(min-width: 600px)" srcset="img/gallery/main/08-medium.webp">
+						<source type="image/jpeg" media="(min-width: 600px)" srcset="img/gallery/main/08-medium.jpg">
+						<source srcset="img/gallery/main/08-small.webp">
+						<img class="gallery__slider-img" data-lazy="img/gallery/main/08-small.jpg" src="img/null.jpg"
 							alt="Magic Bubble Show picture">
 					</picture>
 				</div>
 				<div class="gallery__slider-item">
 					<picture>
-						<source media="(min-width: 960px)"
-							srcset="img/gallery/main/09-large.webp, img/gallery/main/09-large.jpg">
-						<source media="(min-width: 600px)"
-							srcset="img/gallery/main/09-medium.webp, img/gallery/main/09-medium.jpg">
-						<source srcset="img/gallery/main/09-small.webp, img/gallery/main/09-small.jpg">
-						<img class="gallery__slider-img" data-lazy="img/gallery/main/09-small.jpg"
+						<source type="image/webp" media="(min-width: 960px)" srcset="img/gallery/main/09-large.webp">
+						<source type="image/jpeg" media="(min-width: 960px)" srcset="img/gallery/main/09-large.jpg">
+						<source type="image/webp" media="(min-width: 600px)" srcset="img/gallery/main/09-medium.webp">
+						<source type="image/jpeg" media="(min-width: 600px)" srcset="img/gallery/main/09-medium.jpg">
+						<source srcset="img/gallery/main/09-small.webp">
+						<img class="gallery__slider-img" data-lazy="img/gallery/main/09-small.jpg" src="img/null.jpg"
 							alt="Magic Bubble Show picture">
 					</picture>
 				</div>
 				<div class="gallery__slider-item">
 					<picture>
-						<source media="(min-width: 960px)"
-							srcset="img/gallery/main/10-large.webp, img/gallery/main/10-large.jpg">
-						<source media="(min-width: 600px)"
-							srcset="img/gallery/main/10-medium.webp, img/gallery/main/10-medium.jpg">
-						<source srcset="img/gallery/main/10-small.webp, img/gallery/main/10-small.jpg">
-						<img class="gallery__slider-img" data-lazy="img/gallery/main/10-small.jpg"
+						<source type="image/webp" media="(min-width: 960px)" srcset="img/gallery/main/10-large.webp">
+						<source type="image/jpeg" media="(min-width: 960px)" srcset="img/gallery/main/10-large.jpg">
+						<source type="image/webp" media="(min-width: 600px)" srcset="img/gallery/main/10-medium.webp">
+						<source type="image/jpeg" media="(min-width: 600px)" srcset="img/gallery/main/10-medium.jpg">
+						<source srcset="img/gallery/main/10-small.webp">
+						<img class="gallery__slider-img" data-lazy="img/gallery/main/10-small.jpg" src="img/null.jpg"
 							alt="Magic Bubble Show picture">
 					</picture>
 				</div>
 				<div class="gallery__slider-item">
 					<picture>
-						<source media="(min-width: 960px)"
-							srcset="img/gallery/main/11-large.webp, img/gallery/main/11-large.jpg">
-						<source media="(min-width: 600px)"
-							srcset="img/gallery/main/11-medium.webp, img/gallery/main/11-medium.jpg">
-						<source srcset="img/gallery/main/11-small.webp, img/gallery/main/11-small.jpg">
-						<img class="gallery__slider-img" data-lazy="img/gallery/main/11-small.jpg"
+						<source type="image/webp" media="(min-width: 960px)" srcset="img/gallery/main/11-large.webp">
+						<source type="image/jpeg" media="(min-width: 960px)" srcset="img/gallery/main/11-large.jpg">
+						<source type="image/webp" media="(min-width: 600px)" srcset="img/gallery/main/11-medium.webp">
+						<source type="image/jpeg" media="(min-width: 600px)" srcset="img/gallery/main/11-medium.jpg">
+						<source srcset="img/gallery/main/11-small.webp">
+						<img class="gallery__slider-img" data-lazy="img/gallery/main/11-small.jpg" src="img/null.jpg"
 							alt="Magic Bubble Show picture">
 					</picture>
 				</div>
 				<div class="gallery__slider-item">
 					<picture>
-						<source media="(min-width: 960px)"
-							srcset="img/gallery/main/12-large.webp, img/gallery/main/12-large.jpg">
-						<source media="(min-width: 600px)"
-							srcset="img/gallery/main/12-medium.webp, img/gallery/main/12-medium.jpg">
-						<source srcset="img/gallery/main/12-small.webp, img/gallery/main/12-small.jpg">
-						<img class="gallery__slider-img" data-lazy="img/gallery/main/12-small.jpg"
+						<source type="image/webp" media="(min-width: 960px)" srcset="img/gallery/main/12-large.webp">
+						<source type="image/jpeg" media="(min-width: 960px)" srcset="img/gallery/main/12-large.jpg">
+						<source type="image/webp" media="(min-width: 600px)" srcset="img/gallery/main/12-medium.webp">
+						<source type="image/jpeg" media="(min-width: 600px)" srcset="img/gallery/main/12-medium.jpg">
+						<source srcset="img/gallery/main/12-small.webp">
+						<img class="gallery__slider-img" data-lazy="img/gallery/main/12-small.jpg" src="img/null.jpg"
 							alt="Magic Bubble Show picture">
 					</picture>
 				</div>
 				<div class="gallery__slider-item">
 					<picture>
-						<source media="(min-width: 960px)"
-							srcset="img/gallery/main/13-large.webp, img/gallery/main/13-large.jpg">
-						<source media="(min-width: 600px)"
-							srcset="img/gallery/main/13-medium.webp, img/gallery/main/13-medium.jpg">
-						<source srcset="img/gallery/main/13-small.webp, img/gallery/main/13-small.jpg">
-						<img class="gallery__slider-img" data-lazy="img/gallery/main/13-small.jpg"
+						<source type="image/webp" media="(min-width: 960px)" srcset="img/gallery/main/13-large.webp">
+						<source type="image/jpeg" media="(min-width: 960px)" srcset="img/gallery/main/13-large.jpg">
+						<source type="image/webp" media="(min-width: 600px)" srcset="img/gallery/main/13-medium.webp">
+						<source type="image/jpeg" media="(min-width: 600px)" srcset="img/gallery/main/13-medium.jpg">
+						<source srcset="img/gallery/main/13-small.webp">
+						<img class="gallery__slider-img" data-lazy="img/gallery/main/13-small.jpg" src="img/null.jpg"
 							alt="Magic Bubble Show picture">
 					</picture>
 				</div>
 				<div class="gallery__slider-item">
 					<picture>
-						<source media="(min-width: 960px)"
-							srcset="img/gallery/main/14-large.webp, img/gallery/main/14-large.jpg">
-						<source media="(min-width: 600px)"
-							srcset="img/gallery/main/14-medium.webp, img/gallery/main/14-medium.jpg">
-						<source srcset="img/gallery/main/14-small.webp, img/gallery/main/14-small.jpg">
-						<img class="gallery__slider-img" data-lazy="img/gallery/main/14-small.jpg"
+						<source type="image/webp" media="(min-width: 960px)" srcset="img/gallery/main/14-large.webp">
+						<source type="image/jpeg" media="(min-width: 960px)" srcset="img/gallery/main/14-large.jpg">
+						<source type="image/webp" media="(min-width: 600px)" srcset="img/gallery/main/14-medium.webp">
+						<source type="image/jpeg" media="(min-width: 600px)" srcset="img/gallery/main/14-medium.jpg">
+						<source srcset="img/gallery/main/14-small.webp">
+						<img class="gallery__slider-img" data-lazy="img/gallery/main/14-small.jpg" src="img/null.jpg"
 							alt="Magic Bubble Show picture">
 					</picture>
 				</div>
@@ -1065,14 +1100,10 @@
 							</a>
 							<div class="faq__answer">
 								Please remember this is indoor performance! <br><br>
-
 								Any inside area is good: home, play-room, indoor playground or community hall, We create
-								a
-								performance
+								a performance
 								area that is 9&#39; wide and 6&#39; deep to separate myself from the audience. Kids will
-								sit
-								on the
-								chairs or other furnishings or on the floor around my scene. <br><br>
+								sit on the chairs or other furnishings or on the floor around my scene. <br><br>
 
 								But there are a few conditions required:<br>
 								&ndash; If you are making your party at home, please organize open space &mdash; free
@@ -1115,7 +1146,9 @@
 								cannot be made
 								outside. <br>
 								Putting people inside a giant soap also is not possible outdoors because of wind or
-								breeze.
+								breeze.<br>
+								For outdoor activity we&#39;re offering you to take <a
+									href="service-bubble-play.html">Outside Bubble Play</a>.
 							</div>
 						</li>
 						<li>
@@ -1141,9 +1174,9 @@
 			</div>
 			<div class="faq__img-clown wow fadeInUp" data-wow-offset="100">
 				<picture>
-					<source media="(min-width: 890px)" srcset="img/bg-clown.webp, img/bg-clown.png">
-					<img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
-						alt="Questions">
+					<source type="image/webp" media="(min-width: 890px)" srcset="img/bg-clown.webp">
+					<source type="image/png" media="(min-width: 890px)" srcset="img/bg-clown.png">
+					<img src="img/null.jpg" alt="Questions">
 				</picture>
 			</div>
 		</section>
@@ -1251,18 +1284,16 @@
 					<div class="footer__top-item footer__logo">
 						<a class="logo__link" href="#">
 							<picture>
-								<source media="(min-width: 960px)" srcset="img/logo-footer.webp 1x, img/logo-footer.png 1x,
-														img/logo-footer@2x.webp 2x, img/logo-footer@2x.png 2x,
-														img/logo-footer@3x.webp 3x, img/logo-footer@3x.png 3x">
-								<source media="(min-width: 600px)" srcset="img/logo-footer.webp 1x, img/logo-footer.png 1x,
-														img/logo-footer@2x.webp 2x, img/logo-footer@2x.png 2x">
-								<source srcset="img/logo-footer.webp, img/logo-footer.png">
-								<img src="img/logo-footer.png" alt="Magic Bubble Show">
+								<source type="image/webp"
+									srcset="img/logo-footer.webp 1x, img/logo-footer@2x.webp 2x, img/logo-footer@3x.webp 3x">
+								<source type="image/png"
+									srcset="img/logo-footer.png 1x, img/logo-footer@2x.png 2x, img/logo-footer@3x.png 3x">
+								<img data-lazy="img/logo-footer.png" src="img/null.jpg" alt="Magic Bubble Show">
 							</picture>
 						</a>
 					</div>
 					<div class="footer__top-item footer__mail-phone wow fadeInRight" data-wow-delay="0.6s">
-						<a class="link--mail" href="mailto:info@magic-artstudio.com"
+						<a class="link--mail" href="mailto:bubble.show.edmonton@gmail.com"
 							target="_blank">bubble.show.edmonton@gmail.com</a>
 						<a class="link--phone" href="tel:7808637280">780-863-7280</a>
 					</div>

@@ -14,7 +14,7 @@ session_start();
 	$form_page = $_REQUEST['form_page'];
 
 	
-	$to = "lerik13@gmail.com, info@magic-artstudio.com";
+	$to = "lerik13@gmail.com, bubble.show.edmonton@gmail.com";
 	$subject = "message from WEB-site {$name} {$date} {$phone}";
 	
 	$add_service = "";
