@@ -358,7 +358,8 @@ $(function () {
 			console.log($(this).val() + ".jpg");
 		}
 		//$('#service-bonus__img').attr('src', "img/costumes/" + $(this).val() + ".jpg");
-	})();	
+	});	
+	$('input:radio[name=radio-costume][value=01]').click();
 
 
 	/* --- Form --------------------------------------------------------- */
@@ -473,4 +474,6 @@ $(function () {
 	}
 
 	new WOW().init();
+
+
 });
