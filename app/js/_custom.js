@@ -1,53 +1,6 @@
 $(function () {
 
 	document.documentElement.classList.remove("no-js");
-	Modernizr.on('webp', function (result) {
-		if (result) {
-			// supported
-		} else {
-			// not-supported
-		}
-	});
-	/*
-		function includeHTML() {
-			console.log('includeHTML');
-			let z, i, elmnt, file, xhttp;
-			
-			z = document.getElementsByTagName("*");
-			for (i = 0; i < z.length; i++) {
-				elmnt = z[i];
-			
-				file = elmnt.getAttribute("w3-include-html");
-				console.log(`file: ${file}`);
-				if (file) {
-					
-					xhttp = new XMLHttpRequest();
-					xhttp.onreadystatechange = function () {
-						if (this.readyState == 4) {
-							if (this.status == 200) {
-								elmnt.innerHTML = this.responseText;
-							}
-							if (this.status == 404) {
-								elmnt.innerHTML = "Page not found.";
-							}
-							elmnt.removeAttribute("w3-include-html");
-							includeHTML();
-						}
-					}
-					xhttp.open("GET", file, true);
-					xhttp.send();
-					return;
-				}
-			}
-		}
-		includeHTML();*/
-
-	//var lazyLoadInstance = new LazyLoad({
-	//	elements_selector: ".lazy"
-	//});
-
-	//let lazyImages = document.querySelectorAll('.lazy');
-	//lazyload(lazyImages);
 
 	$('.header__top-burger').click(function (event) {
 		//$('.header-menu__burger,.header-menu__menu').toggleClass('active');
@@ -162,8 +115,8 @@ $(function () {
 	});
 	$('.reviews__slider').slick({
 		fade: true,
-		prevArrow: '<img class="slider-arrows slider-arrows--left reviews__slider-arrows--left" src="img/svg/arrow_slider-pink.svg" alt="">',
-		nextArrow: '<img class="slider-arrows slider-arrows--right reviews__slider-arrows--right" src="img/svg/arrow_slider-pink.svg" alt="">',
+		prevArrow: '<img class="slider-arrows slider-arrows--left reviews__slider-arrows--left reviews__slider-arrows--main" src="img/svg/arrow_slider-pink.svg" alt="">',
+		nextArrow: '<img class="slider-arrows slider-arrows--right reviews__slider-arrows--right reviews__slider-arrows--main" src="img/svg/arrow_slider-pink.svg" alt="">',
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		//adaptiveHeight: true,
@@ -389,9 +342,24 @@ $(function () {
 	});
 
 	// --- Bonus - change radio button ---------------
+	if ($('#service-bonus__img')) {
+		if (Modernizr.webp) {
+			$('#service-bonus__img').attr('src', "img/costumes/01.webp");
+		} else {
+			$('#service-bonus__img').attr('src', "img/costumes/01.jpg");
+		}
+	}
 	$("input:radio[name=radio-costume]").click(function () {
-		$('#service-bonus__img').attr('src', "img/costumes/" + $(this).val() + ".jpg");
-	});
+		if (Modernizr.webp) {
+			$('#service-bonus__img').attr('src', "img/costumes/" + $(this).val() + ".webp");
+			console.log($(this).val() + ".webp");
+		} else {
+			$('#service-bonus__img').attr('src', "img/costumes/" + $(this).val() + ".jpg");
+			console.log($(this).val() + ".jpg");
+		}
+		//$('#service-bonus__img').attr('src', "img/costumes/" + $(this).val() + ".jpg");
+	})();	
+
 
 	/* --- Form --------------------------------------------------------- */
 
@@ -505,6 +473,4 @@ $(function () {
 	}
 
 	new WOW().init();
-
-
 });
