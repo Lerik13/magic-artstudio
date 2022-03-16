@@ -1191,7 +1191,7 @@
 				<h3 class="contact__title">Plan your party right now</h3>
 				<div class="contact__subtitle">Leave your message:</div>
 				<!-- <form class="contact__form" id="form" action="#" method="post" enctype="multipart/form-data"> -->
-				<form class="contact__form" id="form" method="POST" enctype="multipart/form-data" data-netlify="true">
+				<form name="contact" class="contact__form" method="POST" data-netlify="true">
 					<div class="contact__form-column">
 						<div class="contact__form-column-inner">
 							<div class="contact__control">
@@ -1263,10 +1263,10 @@
 								however, liability will lie strictly with the client.
 							</p>
 						</div>
-						<div data-netlify-recaptcha="true"></div>
+						<div style="margin-top: 10px; display:flex; justify-content: center;" data-netlify-recaptcha="true"></div>
 					</div>
 
-					<input type="hidden" id="form_page" name="form_page" value="main page">
+					<input type="hidden" id="form_page" name="form_page" value="Main page">
 
 					<div class="contact__button wow fadeInUp" data-wow-offset="100">
 						<button id="button-send" type="submit" class="btn btn--green btn--center">Check
