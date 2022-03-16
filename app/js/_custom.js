@@ -3,7 +3,6 @@ $(function () {
 	document.documentElement.classList.remove("no-js");
 
 	$('.header__top-burger').click(function (event) {
-		//$('.header-menu__burger,.header-menu__menu').toggleClass('active');
 		$('.header__top-burger,.menu').toggleClass('active');
 		$('body').toggleClass('lock');
 	});
@@ -22,10 +21,6 @@ $(function () {
 		slidesToScroll: 1,
 		prevArrow: '<img class="slider-arrows slider-arrows--left services__slider-arrows--left" src="img/svg/arrow-slider2-orange.svg" alt="">',
 		nextArrow: '<img class="slider-arrows slider-arrows--right services__slider-arrows--right" src="img/svg/arrow-slider2-orange.svg" alt="">',
-		//dots: true,
-		//dotsClass: 'header__slider-dots',
-		//centerMode: true,
-		//focusOnSelect: true
 		useTransform: true,
 		speed: 400,
 		cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
@@ -43,7 +38,6 @@ $(function () {
 		focusOnSelect: true,
 		centerMode: false,
 		asNavFor: '.services__slider',
-		//centerPadding: '60px',
 
 		responsive: [{
 				breakpoint: 1450,
@@ -86,7 +80,6 @@ $(function () {
 				}
 			}
 		]
-		//draggable: true,
 	});
 
 	$('.reviews__slider-video').slick({
@@ -119,7 +112,6 @@ $(function () {
 		nextArrow: '<img class="slider-arrows slider-arrows--right reviews__slider-arrows--right reviews__slider-arrows--main" src="img/svg/arrow_slider-pink.svg" alt="">',
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		//adaptiveHeight: true,
 	});
 
 	$('.popup__slider').slick({
@@ -129,19 +121,15 @@ $(function () {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		draggable: false,
-		//adaptiveHeight: true,
 		asNavFor: '.reviews__slider-video',
 	});
 
 	$('.gallery__slider').slick({
-		//fade: true,
 		centerMode: true,
 		centerPadding: '20%',
 		slidesToShow: 1,
 		speed: 500,
 		variableWidth: false,
-		//focusOnSelect: true,
-
 		prevArrow: '<img class="slider-arrows slider-arrows--left gallery__slider-arrows--left" src="img/svg/arrow-slider2-orange.svg" alt="">',
 		nextArrow: '<img class="slider-arrows slider-arrows--right gallery__slider-arrows--right" src="img/svg/arrow-slider2-orange.svg" alt="">',
 		dots: true,
@@ -166,18 +154,11 @@ $(function () {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		arrows: false,
-		//prevArrow: '<img class="slider-arrows slider-arrows--left services__slider-arrows--left" src="img/svg/arrow-slider2-orange.svg" alt="">',
-		//nextArrow: '<img class="slider-arrows slider-arrows--right services__slider-arrows--right" src="img/svg/arrow-slider2-orange.svg" alt="">',
-		//dots: true,
-		//dotsClass: 'header__slider-dots',
-		//centerMode: true,
-		//focusOnSelect: true
 		useTransform: true,
 		speed: 400,
 		cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
 		asNavFor: '.photos__slider-nav',
 		draggable: false,
-		//adaptiveHeight: true,
 	});
 
 	$('.photos__slider-nav').slick({
@@ -190,8 +171,6 @@ $(function () {
 		focusOnSelect: true,
 		centerMode: false,
 		asNavFor: '.photos__slider',
-		//centerPadding: '60px',
-
 		responsive: [{
 				breakpoint: 1450,
 				settings: {
@@ -233,15 +212,8 @@ $(function () {
 				}
 			}
 		]
-		//draggable: true,
 	});
 
-	/*
-			$('#watch-video-bs').click(function (event) {
-				$('#popup-video').toggleClass('active');
-				//window.location()
-			});
-		*/
 	$('#popup__close-btn').click(function (event) {
 		//$('#popup-video').toggleClass('active');
 		$('#popup__video-bs').get(0).pause();
@@ -267,9 +239,6 @@ $(function () {
 		});
 
 	}
-
-
-
 
 	$('.faq__question').click(function (event) {
 		event.preventDefault();
@@ -361,94 +330,5 @@ $(function () {
 	});	
 	$('input:radio[name=radio-costume][value=01]').click();
 
-
-	/* --- Form --------------------------------------------------------- */
-
-	/*$("form").submit(function (e) {
-		e.preventDefault();
-
-		if (checkInputs()) {
-
-			$.post("post.php?" + $("#form").serialize(), {}, function (response) {
-				$("#after_submit").html('');
-				$("#button-send").after('<label class="success" id="after_submit">Your message has been submitted!</label>');
-				clear_form();
-			});
-		} else {
-			$("#after_submit").html('');
-			$("#button-send").after('<label class="error_mess" id="after_submit">Error! Please enter all required field!</label>');
-		}
-
-		return false;
-	});*/
-
-	//----------------------------------------
-
-	function checkInputs() {
-		//console.log('checkInputs');
-
-		const nameValue = document.getElementById('username').value.trim();
-		const emailValue = document.getElementById('email').value.trim();
-
-		if (nameValue === '') {
-			setErrorFor(username, 'Name cannot be blank');
-			return false;
-		} else {
-			setSuccessFor(username);
-		}
-
-		if (emailValue === '') {
-			setErrorFor(email, 'Email cannot be blank');
-			return false;
-		} else if (!isEmail(emailValue)) {
-			setErrorFor(email, 'Not a valid email');
-			return false;
-		} else {
-			setSuccessFor(email);
-		}
-
-		return true;
-
-	}
-
-	function setErrorFor(input, message) {
-		const formControl = input.parentElement;
-		input.focus();
-		const small = formControl.querySelector('small');
-		formControl.className = 'contact__control error';
-		small.innerText = message;
-	}
-
-	function setSuccessFor(input) {
-		const formControl = input.parentElement;
-		formControl.className = 'contact__control success';
-	}
-
-	function unsetFor(input) {
-		const formControl = input.parentElement;
-		formControl.className = 'contact__control';
-	}
-
-
-	function isEmail(email) {
-		return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
-	}
-
-	function clear_form() {
-		$("#username").val('');
-		$("#username").next('.error-box').html('');
-		$("#email").val('');
-		$("#email").next('.error-box').html('');
-		$("#phone").val('');
-		$("#address").val('');
-		$("#date").val('');
-		$("#contact__add-info").val('');
-		unsetFor(username);
-		unsetFor(email);
-
-	}
-
 	new WOW().init();
-
-
 });
