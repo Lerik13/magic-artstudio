@@ -14,7 +14,7 @@ easy way to send quick message to check availability of artists, observe Gallery
 - jQuery
 - slick.js
   
-| ![Main Page](https://github.com/Lerik13/magic-artstudio/blob/master/screenshots/1.jpg)) |
+| ![Main Page](https://github.com/Lerik13/magic-artstudio/blob/master/screenshots/1.jpg) |
 |-|
 
 ![Services](https://github.com/Lerik13/magic-artstudio/blob/master/screenshots/2.jpg)
@@ -28,6 +28,8 @@ easy way to send quick message to check availability of artists, observe Gallery
 
 | ![Reviews](https://github.com/Lerik13/magic-artstudio/blob/master/screenshots/6.jpg) |
 |-|
+
+[link to one of the additional page](https://magic-artstudio.com/service-bubble-show-kids) 
 
 | ![Service - additional page](https://github.com/Lerik13/magic-artstudio/blob/master/screenshots/7.jpg) |
 |-|
