@@ -2357,13 +2357,14 @@
 	font-family: "Anton";
 	font-size: 4.5rem;
 	padding-top: 20px;
+	white-space: nowrap;
 }
 
 .service-addons__add-info {
 	font-family: "Anton";
 	color: $color-black;
 	//margin: 0rem auto;
-	padding-top: 16px;
+	padding-top: 6px;
 }
 
 .service-addons__price {
